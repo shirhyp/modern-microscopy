@@ -1,0 +1,17 @@
+{
+  "MATH": "Mathematical Foundations",
+  "WAVE": "Wave Optics and Light",
+  "GEOM": "Geometric Optics",
+  "DIFF": "Diffraction and Image Formation",
+  "INST": "Microscope Instrumentation",
+  "FLUO": "Fluorescence Fundamentals",
+  "DET": "Photodetection and Sensors",
+  "CONT": "Contrast Mechanisms",
+  "SAMP": "Digital Sampling and Data",
+  "SCAN": "Scanning and Nonlinear Systems",
+  "AO": "Adaptive Optics and Wavefronts",
+  "REST": "Computational Restoration",
+  "QUANT": "Quantitative Image Analysis",
+  "ML": "Data-Driven and Smart Microscopy",
+  "ADV": "Advanced Techniques and Practice"
+}

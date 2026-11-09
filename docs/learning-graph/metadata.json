@@ -1,0 +1,10 @@
+{
+  "title": "Advanced Topics in Modern Microscopy Techniques",
+  "description": "A learning graph for EE 5940, a graduate course on the engineering of modern optical microscopes: wave optics and the point spread function, instrument optics, image sensors and noise, contrast hardware, sampling, laser-scanning and nonlinear systems, adaptive optics, computational restoration, quantitative analysis, and machine learning for smart microscopy.",
+  "creator": "Hye Yoon Park",
+  "date": "2026-11-09",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

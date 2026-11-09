@@ -1,0 +1,6560 @@
+{
+  "metadata": {
+    "title": "Advanced Topics in Modern Microscopy Techniques",
+    "description": "A learning graph for EE 5940, a graduate course on the engineering of modern optical microscopes: wave optics and the point spread function, instrument optics, image sensors and noise, contrast hardware, sampling, laser-scanning and nonlinear systems, adaptive optics, computational restoration, quantitative analysis, and machine learning for smart microscopy.",
+    "creator": "Hye Yoon Park",
+    "date": "2026-11-09",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "MATH": {
+      "classifierName": "Mathematical Foundations",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "WAVE": {
+      "classifierName": "Wave Optics and Light",
+      "color": "DarkSlateBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "GEOM": {
+      "classifierName": "Geometric Optics",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "DIFF": {
+      "classifierName": "Diffraction and Image Formation",
+      "color": "LimeGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "INST": {
+      "classifierName": "Microscope Instrumentation",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FLUO": {
+      "classifierName": "Fluorescence Fundamentals",
+      "color": "DarkGoldenrod",
+      "font": {
+        "color": "white"
+      }
+    },
+    "DET": {
+      "classifierName": "Photodetection and Sensors",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    },
+    "CONT": {
+      "classifierName": "Contrast Mechanisms",
+      "color": "LightSkyBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SAMP": {
+      "classifierName": "Digital Sampling and Data",
+      "color": "Khaki",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SCAN": {
+      "classifierName": "Scanning and Nonlinear Systems",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "AO": {
+      "classifierName": "Adaptive Optics and Wavefronts",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "REST": {
+      "classifierName": "Computational Restoration",
+      "color": "Indigo",
+      "font": {
+        "color": "white"
+      }
+    },
+    "QUANT": {
+      "classifierName": "Quantitative Image Analysis",
+      "color": "DarkOrchid",
+      "font": {
+        "color": "white"
+      }
+    },
+    "ML": {
+      "classifierName": "Data-Driven and Smart Microscopy",
+      "color": "Orange",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ADV": {
+      "classifierName": "Advanced Techniques and Practice",
+      "color": "DeepPink",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Complex Number",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 15008
+    },
+    {
+      "id": 2,
+      "label": "Complex Exponential",
+      "group": "MATH",
+      "cis": 15007
+    },
+    {
+      "id": 3,
+      "label": "Phasor Notation",
+      "group": "MATH",
+      "cis": 12918
+    },
+    {
+      "id": 4,
+      "label": "Vector Calculus",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 15417
+    },
+    {
+      "id": 5,
+      "label": "Linear System",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 617
+    },
+    {
+      "id": 6,
+      "label": "Linear Shift-Invariant System",
+      "group": "MATH",
+      "cis": 616
+    },
+    {
+      "id": 7,
+      "label": "Dirac Delta Function",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 478
+    },
+    {
+      "id": 8,
+      "label": "Impulse Response",
+      "group": "MATH",
+      "cis": 436
+    },
+    {
+      "id": 9,
+      "label": "Convolution",
+      "group": "MATH",
+      "cis": 179
+    },
+    {
+      "id": 10,
+      "label": "Fourier Series",
+      "group": "MATH",
+      "cis": 2084
+    },
+    {
+      "id": 11,
+      "label": "Fourier Transform",
+      "group": "MATH",
+      "cis": 2083
+    },
+    {
+      "id": 12,
+      "label": "2D Fourier Transform",
+      "group": "MATH",
+      "cis": 1445
+    },
+    {
+      "id": 13,
+      "label": "Spatial Frequency",
+      "group": "MATH",
+      "cis": 546
+    },
+    {
+      "id": 14,
+      "label": "Convolution Theorem",
+      "group": "MATH",
+      "cis": 42
+    },
+    {
+      "id": 15,
+      "label": "Transfer Function",
+      "group": "MATH",
+      "cis": 25
+    },
+    {
+      "id": 16,
+      "label": "Discrete Fourier Transform",
+      "group": "MATH",
+      "cis": 7
+    },
+    {
+      "id": 17,
+      "label": "Fast Fourier Transform",
+      "group": "MATH",
+      "cis": 6
+    },
+    {
+      "id": 18,
+      "label": "Rect and Sinc Functions",
+      "group": "MATH",
+      "cis": 1
+    },
+    {
+      "id": 19,
+      "label": "Gaussian Function",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 506
+    },
+    {
+      "id": 20,
+      "label": "Bessel Function",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 341
+    },
+    {
+      "id": 21,
+      "label": "Matrix Algebra",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 160
+    },
+    {
+      "id": 22,
+      "label": "Linear Least Squares",
+      "group": "MATH",
+      "cis": 2
+    },
+    {
+      "id": 23,
+      "label": "Probability Distribution",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 1232
+    },
+    {
+      "id": 24,
+      "label": "Mean and Variance",
+      "group": "MATH",
+      "cis": 120
+    },
+    {
+      "id": 25,
+      "label": "Poisson Distribution",
+      "group": "MATH",
+      "cis": 407
+    },
+    {
+      "id": 26,
+      "label": "Gaussian Distribution",
+      "group": "MATH",
+      "cis": 485
+    },
+    {
+      "id": 27,
+      "label": "Statistical Independence",
+      "group": "MATH",
+      "cis": 113
+    },
+    {
+      "id": 28,
+      "label": "Maximum Likelihood Estimation",
+      "group": "MATH",
+      "cis": 17
+    },
+    {
+      "id": 29,
+      "label": "Bayes Theorem",
+      "group": "MATH",
+      "cis": 3
+    },
+    {
+      "id": 30,
+      "label": "Hypothesis Testing",
+      "group": "MATH",
+      "cis": 2
+    },
+    {
+      "id": 31,
+      "label": "Optimization Methods",
+      "group": "MATH",
+      "cis": 146
+    },
+    {
+      "id": 32,
+      "label": "Gradient Descent",
+      "group": "MATH",
+      "cis": 35
+    },
+    {
+      "id": 33,
+      "label": "Python for Image Processing",
+      "group": "MATH",
+      "shape": "box",
+      "cis": 8
+    },
+    {
+      "id": 34,
+      "label": "Maxwell's Equations",
+      "group": "WAVE",
+      "cis": 15416
+    },
+    {
+      "id": 35,
+      "label": "Electromagnetic Wave Equation",
+      "group": "WAVE",
+      "cis": 15133
+    },
+    {
+      "id": 36,
+      "label": "Plane Wave",
+      "group": "WAVE",
+      "cis": 12917
+    },
+    {
+      "id": 37,
+      "label": "Wavelength and Frequency",
+      "group": "WAVE",
+      "cis": 1995
+    },
+    {
+      "id": 38,
+      "label": "Wave Vector",
+      "group": "WAVE",
+      "cis": 3094
+    },
+    {
+      "id": 39,
+      "label": "Refractive Index",
+      "group": "WAVE",
+      "cis": 3499
+    },
+    {
+      "id": 40,
+      "label": "Optical Path Length",
+      "group": "WAVE",
+      "cis": 17
+    },
+    {
+      "id": 41,
+      "label": "Phase of a Wave",
+      "group": "WAVE",
+      "cis": 3476
+    },
+    {
+      "id": 42,
+      "label": "Spherical Wave",
+      "group": "WAVE",
+      "cis": 920
+    },
+    {
+      "id": 43,
+      "label": "Wavefront",
+      "group": "WAVE",
+      "cis": 3093
+    },
+    {
+      "id": 44,
+      "label": "Poynting Vector",
+      "group": "WAVE",
+      "cis": 269
+    },
+    {
+      "id": 45,
+      "label": "Optical Intensity",
+      "group": "WAVE",
+      "cis": 268
+    },
+    {
+      "id": 46,
+      "label": "Polarization of Light",
+      "group": "WAVE",
+      "cis": 36
+    },
+    {
+      "id": 47,
+      "label": "Linear Polarization",
+      "group": "WAVE",
+      "cis": 7
+    },
+    {
+      "id": 48,
+      "label": "Circular Polarization",
+      "group": "WAVE",
+      "cis": 2
+    },
+    {
+      "id": 49,
+      "label": "Jones Calculus",
+      "group": "WAVE",
+      "cis": 8
+    },
+    {
+      "id": 50,
+      "label": "Superposition Principle",
+      "group": "WAVE",
+      "cis": 1295
+    },
+    {
+      "id": 51,
+      "label": "Interference",
+      "group": "WAVE",
+      "cis": 382
+    },
+    {
+      "id": 52,
+      "label": "Coherence",
+      "group": "WAVE",
+      "cis": 311
+    },
+    {
+      "id": 53,
+      "label": "Temporal Coherence",
+      "group": "WAVE",
+      "cis": 3
+    },
+    {
+      "id": 54,
+      "label": "Spatial Coherence",
+      "group": "WAVE",
+      "cis": 245
+    },
+    {
+      "id": 55,
+      "label": "Coherence Length",
+      "group": "WAVE",
+      "cis": 2
+    },
+    {
+      "id": 56,
+      "label": "Reflection and Refraction",
+      "group": "WAVE",
+      "cis": 3066
+    },
+    {
+      "id": 57,
+      "label": "Snell's Law",
+      "group": "WAVE",
+      "cis": 3054
+    },
+    {
+      "id": 58,
+      "label": "Total Internal Reflection",
+      "group": "WAVE",
+      "cis": 4
+    },
+    {
+      "id": 59,
+      "label": "Fresnel Equations",
+      "group": "WAVE",
+      "cis": 2
+    },
+    {
+      "id": 60,
+      "label": "Evanescent Wave",
+      "group": "WAVE",
+      "cis": 2
+    },
+    {
+      "id": 61,
+      "label": "Dispersion",
+      "group": "WAVE",
+      "cis": 10
+    },
+    {
+      "id": 62,
+      "label": "Absorption of Light",
+      "group": "WAVE",
+      "cis": 212
+    },
+    {
+      "id": 63,
+      "label": "Beer-Lambert Law",
+      "group": "WAVE",
+      "cis": 22
+    },
+    {
+      "id": 64,
+      "label": "Scattering of Light",
+      "group": "WAVE",
+      "cis": 11
+    },
+    {
+      "id": 65,
+      "label": "Rayleigh Scattering",
+      "group": "WAVE",
+      "cis": 1
+    },
+    {
+      "id": 66,
+      "label": "Mie Scattering",
+      "group": "WAVE",
+      "cis": 1
+    },
+    {
+      "id": 67,
+      "label": "Scattering Mean Free Path",
+      "group": "WAVE",
+      "cis": 7
+    },
+    {
+      "id": 68,
+      "label": "Photon",
+      "group": "WAVE",
+      "cis": 1967
+    },
+    {
+      "id": 69,
+      "label": "Photon Energy",
+      "group": "WAVE",
+      "cis": 1404
+    },
+    {
+      "id": 70,
+      "label": "Gaussian Beam",
+      "group": "WAVE",
+      "cis": 7
+    },
+    {
+      "id": 71,
+      "label": "Beam Waist and Rayleigh Range",
+      "group": "WAVE",
+      "cis": 5
+    },
+    {
+      "id": 72,
+      "label": "Laser",
+      "group": "WAVE",
+      "cis": 62
+    },
+    {
+      "id": 73,
+      "label": "Ray Optics Approximation",
+      "group": "GEOM",
+      "cis": 3049
+    },
+    {
+      "id": 74,
+      "label": "Paraxial Approximation",
+      "group": "GEOM",
+      "cis": 3048
+    },
+    {
+      "id": 75,
+      "label": "Thin Lens",
+      "group": "GEOM",
+      "cis": 2972
+    },
+    {
+      "id": 76,
+      "label": "Focal Length",
+      "group": "GEOM",
+      "cis": 1104
+    },
+    {
+      "id": 77,
+      "label": "Thin Lens Equation",
+      "group": "GEOM",
+      "cis": 1101
+    },
+    {
+      "id": 78,
+      "label": "Lateral Magnification",
+      "group": "GEOM",
+      "cis": 158
+    },
+    {
+      "id": 79,
+      "label": "Real and Virtual Images",
+      "group": "GEOM",
+      "cis": 1
+    },
+    {
+      "id": 80,
+      "label": "Thick Lens and Principal Planes",
+      "group": "GEOM",
+      "cis": 2
+    },
+    {
+      "id": 81,
+      "label": "Ray Transfer Matrix",
+      "group": "GEOM",
+      "cis": 2
+    },
+    {
+      "id": 82,
+      "label": "Compound Lens Systems",
+      "group": "GEOM",
+      "cis": 1
+    },
+    {
+      "id": 83,
+      "label": "Aperture Stop",
+      "group": "GEOM",
+      "cis": 1669
+    },
+    {
+      "id": 84,
+      "label": "Field Stop",
+      "group": "GEOM",
+      "cis": 97
+    },
+    {
+      "id": 85,
+      "label": "Entrance and Exit Pupils",
+      "group": "GEOM",
+      "cis": 1110
+    },
+    {
+      "id": 86,
+      "label": "Chief Ray",
+      "group": "GEOM",
+      "cis": 5
+    },
+    {
+      "id": 87,
+      "label": "Marginal Ray",
+      "group": "GEOM",
+      "cis": 381
+    },
+    {
+      "id": 88,
+      "label": "Telecentricity",
+      "group": "GEOM",
+      "cis": 3
+    },
+    {
+      "id": 89,
+      "label": "Conjugate Planes",
+      "group": "GEOM",
+      "cis": 784
+    },
+    {
+      "id": 90,
+      "label": "Back Focal Plane",
+      "group": "GEOM",
+      "cis": 571
+    },
+    {
+      "id": 91,
+      "label": "4f Relay System",
+      "group": "GEOM",
+      "cis": 54
+    },
+    {
+      "id": 92,
+      "label": "Etendue",
+      "group": "GEOM",
+      "cis": 1
+    },
+    {
+      "id": 93,
+      "label": "Lagrange Invariant",
+      "group": "GEOM",
+      "cis": 1
+    },
+    {
+      "id": 94,
+      "label": "Optical Aberrations",
+      "group": "GEOM",
+      "cis": 73
+    },
+    {
+      "id": 95,
+      "label": "Spherical Aberration",
+      "group": "GEOM",
+      "cis": 5
+    },
+    {
+      "id": 96,
+      "label": "Chromatic Aberration",
+      "group": "GEOM",
+      "cis": 6
+    },
+    {
+      "id": 97,
+      "label": "Coma",
+      "group": "GEOM",
+      "cis": 1
+    },
+    {
+      "id": 98,
+      "label": "Astigmatism",
+      "group": "GEOM",
+      "cis": 2
+    },
+    {
+      "id": 99,
+      "label": "Field Curvature",
+      "group": "GEOM",
+      "cis": 2
+    },
+    {
+      "id": 100,
+      "label": "Distortion",
+      "group": "GEOM",
+      "cis": 1
+    },
+    {
+      "id": 101,
+      "label": "Achromatic Doublet",
+      "group": "GEOM",
+      "cis": 1
+    },
+    {
+      "id": 102,
+      "label": "Curved Mirror Focusing",
+      "group": "GEOM",
+      "cis": 1
+    },
+    {
+      "id": 103,
+      "label": "Numerical Aperture",
+      "group": "DIFF",
+      "cis": 378
+    },
+    {
+      "id": 104,
+      "label": "Huygens-Fresnel Principle",
+      "group": "DIFF",
+      "cis": 912
+    },
+    {
+      "id": 105,
+      "label": "Scalar Diffraction Theory",
+      "group": "DIFF",
+      "cis": 911
+    },
+    {
+      "id": 106,
+      "label": "Fresnel Diffraction",
+      "group": "DIFF",
+      "cis": 3
+    },
+    {
+      "id": 107,
+      "label": "Fraunhofer Diffraction",
+      "group": "DIFF",
+      "cis": 907
+    },
+    {
+      "id": 108,
+      "label": "Fresnel Number",
+      "group": "DIFF",
+      "cis": 1
+    },
+    {
+      "id": 109,
+      "label": "Angular Spectrum",
+      "group": "DIFF",
+      "cis": 537
+    },
+    {
+      "id": 110,
+      "label": "Lens as Fourier Transformer",
+      "group": "DIFF",
+      "cis": 537
+    },
+    {
+      "id": 111,
+      "label": "Circular Aperture Diffraction",
+      "group": "DIFF",
+      "cis": 338
+    },
+    {
+      "id": 112,
+      "label": "Airy Disk",
+      "group": "DIFF",
+      "cis": 337
+    },
+    {
+      "id": 113,
+      "label": "Diffraction Grating",
+      "group": "DIFF",
+      "cis": 30
+    },
+    {
+      "id": 114,
+      "label": "Pupil Function",
+      "group": "DIFF",
+      "cis": 535
+    },
+    {
+      "id": 115,
+      "label": "Coherent Imaging",
+      "group": "DIFF",
+      "cis": 10
+    },
+    {
+      "id": 116,
+      "label": "Incoherent Imaging",
+      "group": "DIFF",
+      "cis": 234
+    },
+    {
+      "id": 117,
+      "label": "Amplitude Spread Function",
+      "group": "DIFF",
+      "cis": 231
+    },
+    {
+      "id": 118,
+      "label": "Point Spread Function",
+      "group": "DIFF",
+      "cis": 230
+    },
+    {
+      "id": 119,
+      "label": "Coherent Transfer Function",
+      "group": "DIFF",
+      "cis": 6
+    },
+    {
+      "id": 120,
+      "label": "Optical Transfer Function",
+      "group": "DIFF",
+      "cis": 18
+    },
+    {
+      "id": 121,
+      "label": "Modulation Transfer Function",
+      "group": "DIFF",
+      "cis": 1
+    },
+    {
+      "id": 122,
+      "label": "Phase Transfer Function",
+      "group": "DIFF",
+      "cis": 1
+    },
+    {
+      "id": 123,
+      "label": "Cutoff Frequency",
+      "group": "DIFF",
+      "cis": 12
+    },
+    {
+      "id": 124,
+      "label": "Diffraction Limit",
+      "group": "DIFF",
+      "cis": 91
+    },
+    {
+      "id": 125,
+      "label": "Abbe Resolution Limit",
+      "group": "DIFF",
+      "cis": 26
+    },
+    {
+      "id": 126,
+      "label": "Rayleigh Criterion",
+      "group": "DIFF",
+      "cis": 27
+    },
+    {
+      "id": 127,
+      "label": "Sparrow Criterion",
+      "group": "DIFF",
+      "cis": 1
+    },
+    {
+      "id": 128,
+      "label": "Lateral Resolution",
+      "group": "DIFF",
+      "cis": 25
+    },
+    {
+      "id": 129,
+      "label": "Axial Resolution",
+      "group": "DIFF",
+      "cis": 29
+    },
+    {
+      "id": 130,
+      "label": "3D Point Spread Function",
+      "group": "DIFF",
+      "cis": 7
+    },
+    {
+      "id": 131,
+      "label": "Depth of Field",
+      "group": "DIFF",
+      "cis": 16
+    },
+    {
+      "id": 132,
+      "label": "Missing Cone Problem",
+      "group": "DIFF",
+      "cis": 2
+    },
+    {
+      "id": 133,
+      "label": "Image Formation Model",
+      "group": "DIFF",
+      "cis": 104
+    },
+    {
+      "id": 134,
+      "label": "PSF Measurement with Beads",
+      "group": "DIFF",
+      "cis": 2
+    },
+    {
+      "id": 135,
+      "label": "PSF Engineering",
+      "group": "DIFF",
+      "cis": 7
+    },
+    {
+      "id": 136,
+      "label": "Bessel Beam",
+      "group": "DIFF",
+      "cis": 2
+    },
+    {
+      "id": 137,
+      "label": "Vectorial High-NA Effects",
+      "group": "DIFF",
+      "cis": 1
+    },
+    {
+      "id": 138,
+      "label": "Partial Coherence",
+      "group": "DIFF",
+      "cis": 3
+    },
+    {
+      "id": 139,
+      "label": "Compound Microscope",
+      "group": "INST",
+      "cis": 157
+    },
+    {
+      "id": 140,
+      "label": "Finite Tube Length Design",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 141,
+      "label": "Infinity-Corrected Microscope",
+      "group": "INST",
+      "cis": 49
+    },
+    {
+      "id": 142,
+      "label": "Infinity Space",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 143,
+      "label": "Objective Lens",
+      "group": "INST",
+      "cis": 91
+    },
+    {
+      "id": 144,
+      "label": "Tube Lens",
+      "group": "INST",
+      "cis": 47
+    },
+    {
+      "id": 145,
+      "label": "Objective Magnification",
+      "group": "INST",
+      "cis": 26
+    },
+    {
+      "id": 146,
+      "label": "Eyepiece",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 147,
+      "label": "Inverted and Upright Stands",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 148,
+      "label": "Immersion Media",
+      "group": "INST",
+      "cis": 5
+    },
+    {
+      "id": 149,
+      "label": "Oil Immersion Objective",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 150,
+      "label": "Water Immersion Objective",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 151,
+      "label": "Working Distance",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 152,
+      "label": "Cover Glass Correction",
+      "group": "INST",
+      "cis": 2
+    },
+    {
+      "id": 153,
+      "label": "Correction Collar",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 154,
+      "label": "Plan Apochromat Objective",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 155,
+      "label": "Objective Back Aperture",
+      "group": "INST",
+      "cis": 2
+    },
+    {
+      "id": 156,
+      "label": "Field of View",
+      "group": "INST",
+      "cis": 20
+    },
+    {
+      "id": 157,
+      "label": "Collection Efficiency",
+      "group": "INST",
+      "cis": 11
+    },
+    {
+      "id": 158,
+      "label": "Light Sources for Microscopy",
+      "group": "INST",
+      "cis": 210
+    },
+    {
+      "id": 159,
+      "label": "Arc Lamps and Halogen Sources",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 160,
+      "label": "LED Illumination",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 161,
+      "label": "Laser Illumination",
+      "group": "INST",
+      "cis": 44
+    },
+    {
+      "id": 162,
+      "label": "Collector Lens",
+      "group": "INST",
+      "cis": 142
+    },
+    {
+      "id": 163,
+      "label": "Condenser Lens",
+      "group": "INST",
+      "cis": 141
+    },
+    {
+      "id": 164,
+      "label": "Critical Illumination",
+      "group": "INST",
+      "cis": 65
+    },
+    {
+      "id": 165,
+      "label": "Kohler Illumination",
+      "group": "INST",
+      "cis": 75
+    },
+    {
+      "id": 166,
+      "label": "Illumination Uniformity",
+      "group": "INST",
+      "cis": 64
+    },
+    {
+      "id": 167,
+      "label": "Condenser Aperture Setting",
+      "group": "INST",
+      "cis": 2
+    },
+    {
+      "id": 168,
+      "label": "Transmitted Light Path",
+      "group": "INST",
+      "cis": 6
+    },
+    {
+      "id": 169,
+      "label": "Epi-Illumination",
+      "group": "INST",
+      "cis": 21
+    },
+    {
+      "id": 170,
+      "label": "Detection Path",
+      "group": "INST",
+      "cis": 19
+    },
+    {
+      "id": 171,
+      "label": "Optical Filters",
+      "group": "INST",
+      "cis": 31
+    },
+    {
+      "id": 172,
+      "label": "Bandpass Filter",
+      "group": "INST",
+      "cis": 6
+    },
+    {
+      "id": 173,
+      "label": "Longpass and Shortpass Filters",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 174,
+      "label": "Dichroic Mirror",
+      "group": "INST",
+      "cis": 21
+    },
+    {
+      "id": 175,
+      "label": "Neutral Density Filter",
+      "group": "INST",
+      "cis": 2
+    },
+    {
+      "id": 176,
+      "label": "Optical Density",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 177,
+      "label": "Beam Splitter",
+      "group": "INST",
+      "cis": 8
+    },
+    {
+      "id": 178,
+      "label": "Relay Optics",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 179,
+      "label": "Beam Expander",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 180,
+      "label": "Optical Fiber Delivery",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 181,
+      "label": "Optical Alignment",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 182,
+      "label": "Mechanical Stability and Drift",
+      "group": "INST",
+      "cis": 13
+    },
+    {
+      "id": 183,
+      "label": "Focus Drift and Autofocus",
+      "group": "INST",
+      "cis": 3
+    },
+    {
+      "id": 184,
+      "label": "Motorized Stage",
+      "group": "INST",
+      "cis": 9
+    },
+    {
+      "id": 185,
+      "label": "Piezo Z Stage",
+      "group": "INST",
+      "cis": 1
+    },
+    {
+      "id": 186,
+      "label": "Absorption and Emission Spectra",
+      "group": "FLUO",
+      "cis": 152
+    },
+    {
+      "id": 187,
+      "label": "Jablonski Diagram",
+      "group": "FLUO",
+      "cis": 127
+    },
+    {
+      "id": 188,
+      "label": "Fluorescence",
+      "group": "FLUO",
+      "cis": 119
+    },
+    {
+      "id": 189,
+      "label": "Stokes Shift",
+      "group": "FLUO",
+      "cis": 21
+    },
+    {
+      "id": 190,
+      "label": "Fluorescence Lifetime",
+      "group": "FLUO",
+      "cis": 8
+    },
+    {
+      "id": 191,
+      "label": "Quantum Yield",
+      "group": "FLUO",
+      "cis": 20
+    },
+    {
+      "id": 192,
+      "label": "Extinction Coefficient",
+      "group": "FLUO",
+      "cis": 20
+    },
+    {
+      "id": 193,
+      "label": "Fluorophore Brightness",
+      "group": "FLUO",
+      "cis": 19
+    },
+    {
+      "id": 194,
+      "label": "Fluorescent Probes",
+      "group": "FLUO",
+      "cis": 18
+    },
+    {
+      "id": 195,
+      "label": "Photobleaching",
+      "group": "FLUO",
+      "cis": 11
+    },
+    {
+      "id": 196,
+      "label": "Phototoxicity",
+      "group": "FLUO",
+      "cis": 11
+    },
+    {
+      "id": 197,
+      "label": "Fluorescence Saturation",
+      "group": "FLUO",
+      "cis": 4
+    },
+    {
+      "id": 198,
+      "label": "Triplet State and Blinking",
+      "group": "FLUO",
+      "cis": 7
+    },
+    {
+      "id": 199,
+      "label": "Photoswitchable Fluorophores",
+      "group": "FLUO",
+      "cis": 6
+    },
+    {
+      "id": 200,
+      "label": "Autofluorescence",
+      "group": "FLUO",
+      "cis": 1
+    },
+    {
+      "id": 201,
+      "label": "Epi-Fluorescence Microscope",
+      "group": "FLUO",
+      "cis": 20
+    },
+    {
+      "id": 202,
+      "label": "Filter Cube",
+      "group": "FLUO",
+      "cis": 5
+    },
+    {
+      "id": 203,
+      "label": "Spectral Bleed-Through",
+      "group": "FLUO",
+      "cis": 4
+    },
+    {
+      "id": 204,
+      "label": "Multicolor Imaging",
+      "group": "FLUO",
+      "cis": 3
+    },
+    {
+      "id": 205,
+      "label": "Widefield Fluorescence",
+      "group": "FLUO",
+      "cis": 13
+    },
+    {
+      "id": 206,
+      "label": "Out-of-Focus Background",
+      "group": "FLUO",
+      "cis": 12
+    },
+    {
+      "id": 207,
+      "label": "FRET",
+      "group": "FLUO",
+      "cis": 1
+    },
+    {
+      "id": 208,
+      "label": "Fluorescence Anisotropy",
+      "group": "FLUO",
+      "cis": 1
+    },
+    {
+      "id": 209,
+      "label": "Photon Budget",
+      "group": "FLUO",
+      "cis": 10
+    },
+    {
+      "id": 210,
+      "label": "TIRF Microscopy",
+      "group": "FLUO",
+      "cis": 1
+    },
+    {
+      "id": 211,
+      "label": "Photoelectric Effect",
+      "group": "DET",
+      "cis": 1224
+    },
+    {
+      "id": 212,
+      "label": "Photodiode",
+      "group": "DET",
+      "cis": 1047
+    },
+    {
+      "id": 213,
+      "label": "Quantum Efficiency",
+      "group": "DET",
+      "cis": 114
+    },
+    {
+      "id": 214,
+      "label": "Photon Shot Noise",
+      "group": "DET",
+      "cis": 290
+    },
+    {
+      "id": 215,
+      "label": "Signal-to-Noise Ratio",
+      "group": "DET",
+      "cis": 115
+    },
+    {
+      "id": 216,
+      "label": "Read Noise",
+      "group": "DET",
+      "cis": 484
+    },
+    {
+      "id": 217,
+      "label": "Dark Current",
+      "group": "DET",
+      "cis": 115
+    },
+    {
+      "id": 218,
+      "label": "Dark Noise",
+      "group": "DET",
+      "cis": 112
+    },
+    {
+      "id": 219,
+      "label": "Noise Addition in Quadrature",
+      "group": "DET",
+      "cis": 112
+    },
+    {
+      "id": 220,
+      "label": "Detector SNR Model",
+      "group": "DET",
+      "cis": 111
+    },
+    {
+      "id": 221,
+      "label": "Shot-Noise-Limited Detection",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 222,
+      "label": "Full Well Capacity",
+      "group": "DET",
+      "cis": 198
+    },
+    {
+      "id": 223,
+      "label": "Dynamic Range",
+      "group": "DET",
+      "cis": 197
+    },
+    {
+      "id": 224,
+      "label": "Analog-to-Digital Converter",
+      "group": "DET",
+      "cis": 190
+    },
+    {
+      "id": 225,
+      "label": "Camera Gain",
+      "group": "DET",
+      "cis": 69
+    },
+    {
+      "id": 226,
+      "label": "Camera Offset",
+      "group": "DET",
+      "cis": 68
+    },
+    {
+      "id": 227,
+      "label": "Image Sensor Pixel",
+      "group": "DET",
+      "cis": 173
+    },
+    {
+      "id": 228,
+      "label": "Fill Factor and Microlenses",
+      "group": "DET",
+      "cis": 2
+    },
+    {
+      "id": 229,
+      "label": "Back-Illuminated Sensor",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 230,
+      "label": "CCD Sensor",
+      "group": "DET",
+      "cis": 35
+    },
+    {
+      "id": 231,
+      "label": "CCD Charge Transfer Readout",
+      "group": "DET",
+      "cis": 12
+    },
+    {
+      "id": 232,
+      "label": "CMOS Sensor",
+      "group": "DET",
+      "cis": 82
+    },
+    {
+      "id": 233,
+      "label": "sCMOS Camera",
+      "group": "DET",
+      "cis": 71
+    },
+    {
+      "id": 234,
+      "label": "Rolling and Global Shutter",
+      "group": "DET",
+      "cis": 10
+    },
+    {
+      "id": 235,
+      "label": "Pixel-Dependent Noise in sCMOS",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 236,
+      "label": "Electron Multiplication",
+      "group": "DET",
+      "cis": 22
+    },
+    {
+      "id": 237,
+      "label": "EMCCD Camera",
+      "group": "DET",
+      "cis": 11
+    },
+    {
+      "id": 238,
+      "label": "Excess Noise Factor",
+      "group": "DET",
+      "cis": 10
+    },
+    {
+      "id": 239,
+      "label": "Clock-Induced Charge",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 240,
+      "label": "Camera Cooling",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 241,
+      "label": "Hot Pixels",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 242,
+      "label": "Photomultiplier Tube",
+      "group": "DET",
+      "cis": 62
+    },
+    {
+      "id": 243,
+      "label": "PMT Dynode Gain",
+      "group": "DET",
+      "cis": 5
+    },
+    {
+      "id": 244,
+      "label": "Photocathode Materials",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 245,
+      "label": "Avalanche Photodiode",
+      "group": "DET",
+      "cis": 7
+    },
+    {
+      "id": 246,
+      "label": "Single-Photon Avalanche Diode",
+      "group": "DET",
+      "cis": 5
+    },
+    {
+      "id": 247,
+      "label": "Hybrid Photodetector",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 248,
+      "label": "Photon Counting",
+      "group": "DET",
+      "cis": 4
+    },
+    {
+      "id": 249,
+      "label": "Dead Time and Pile-Up",
+      "group": "DET",
+      "cis": 1
+    },
+    {
+      "id": 250,
+      "label": "Time-Correlated Photon Counting",
+      "group": "DET",
+      "cis": 2
+    },
+    {
+      "id": 251,
+      "label": "Point Detectors vs Cameras",
+      "group": "DET",
+      "cis": 54
+    },
+    {
+      "id": 252,
+      "label": "Detector Selection",
+      "group": "DET",
+      "cis": 9
+    },
+    {
+      "id": 253,
+      "label": "Photon Transfer Curve",
+      "group": "DET",
+      "cis": 68
+    },
+    {
+      "id": 254,
+      "label": "Camera Calibration",
+      "group": "DET",
+      "cis": 67
+    },
+    {
+      "id": 255,
+      "label": "Flat-Field Correction",
+      "group": "DET",
+      "cis": 63
+    },
+    {
+      "id": 256,
+      "label": "Image Contrast",
+      "group": "CONT",
+      "cis": 42
+    },
+    {
+      "id": 257,
+      "label": "Amplitude Object",
+      "group": "CONT",
+      "cis": 6
+    },
+    {
+      "id": 258,
+      "label": "Phase Object",
+      "group": "CONT",
+      "cis": 16
+    },
+    {
+      "id": 259,
+      "label": "Weak Phase Object Approximation",
+      "group": "CONT",
+      "cis": 4
+    },
+    {
+      "id": 260,
+      "label": "Contrast-to-Noise Ratio",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 261,
+      "label": "Brightfield Microscopy",
+      "group": "CONT",
+      "cis": 5
+    },
+    {
+      "id": 262,
+      "label": "Darkfield Microscopy",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 263,
+      "label": "Oblique Illumination",
+      "group": "CONT",
+      "cis": 3
+    },
+    {
+      "id": 264,
+      "label": "Fourier Plane Filtering",
+      "group": "CONT",
+      "cis": 5
+    },
+    {
+      "id": 265,
+      "label": "Zernike Phase Contrast",
+      "group": "CONT",
+      "cis": 3
+    },
+    {
+      "id": 266,
+      "label": "Phase Ring and Annulus",
+      "group": "CONT",
+      "cis": 2
+    },
+    {
+      "id": 267,
+      "label": "Phase Contrast Halo Artifact",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 268,
+      "label": "Hoffman Modulation Contrast",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 269,
+      "label": "Polarizer and Analyzer",
+      "group": "CONT",
+      "cis": 6
+    },
+    {
+      "id": 270,
+      "label": "Wave Plates",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 271,
+      "label": "Birefringence",
+      "group": "CONT",
+      "cis": 14
+    },
+    {
+      "id": 272,
+      "label": "Retardance",
+      "group": "CONT",
+      "cis": 2
+    },
+    {
+      "id": 273,
+      "label": "Polarized Light Microscopy",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 274,
+      "label": "Wollaston and Nomarski Prisms",
+      "group": "CONT",
+      "cis": 3
+    },
+    {
+      "id": 275,
+      "label": "DIC Microscopy",
+      "group": "CONT",
+      "cis": 2
+    },
+    {
+      "id": 276,
+      "label": "DIC Shear and Bias",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 277,
+      "label": "Interference Microscopy",
+      "group": "CONT",
+      "cis": 7
+    },
+    {
+      "id": 278,
+      "label": "Quantitative Phase Imaging",
+      "group": "CONT",
+      "cis": 5
+    },
+    {
+      "id": 279,
+      "label": "Digital Holographic Microscopy",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 280,
+      "label": "Phase Unwrapping",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 281,
+      "label": "Transport of Intensity Equation",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 282,
+      "label": "Interference Reflection (IRM)",
+      "group": "CONT",
+      "cis": 1
+    },
+    {
+      "id": 283,
+      "label": "Fluorescence Contrast",
+      "group": "CONT",
+      "cis": 14
+    },
+    {
+      "id": 284,
+      "label": "Label-Free vs Labeled Contrast",
+      "group": "CONT",
+      "cis": 2
+    },
+    {
+      "id": 285,
+      "label": "Nyquist-Shannon Sampling",
+      "group": "SAMP",
+      "cis": 41
+    },
+    {
+      "id": 286,
+      "label": "Nyquist Frequency",
+      "group": "SAMP",
+      "cis": 8
+    },
+    {
+      "id": 287,
+      "label": "Aliasing",
+      "group": "SAMP",
+      "cis": 4
+    },
+    {
+      "id": 288,
+      "label": "Pixel Size in Sample Space",
+      "group": "SAMP",
+      "cis": 5
+    },
+    {
+      "id": 289,
+      "label": "Nyquist Pixel Size Matching",
+      "group": "SAMP",
+      "cis": 3
+    },
+    {
+      "id": 290,
+      "label": "Oversampling and Undersampling",
+      "group": "SAMP",
+      "cis": 1
+    },
+    {
+      "id": 291,
+      "label": "Pixel Binning",
+      "group": "SAMP",
+      "cis": 1
+    },
+    {
+      "id": 292,
+      "label": "Pixel Integration Effect",
+      "group": "SAMP",
+      "cis": 1
+    },
+    {
+      "id": 293,
+      "label": "Axial Sampling Step",
+      "group": "SAMP",
+      "cis": 5
+    },
+    {
+      "id": 294,
+      "label": "Temporal Sampling",
+      "group": "SAMP",
+      "cis": 26
+    },
+    {
+      "id": 295,
+      "label": "Exposure Time",
+      "group": "SAMP",
+      "cis": 10
+    },
+    {
+      "id": 296,
+      "label": "Quantization",
+      "group": "SAMP",
+      "cis": 52
+    },
+    {
+      "id": 297,
+      "label": "Bit Depth",
+      "group": "SAMP",
+      "cis": 6
+    },
+    {
+      "id": 298,
+      "label": "Digital Image Representation",
+      "group": "SAMP",
+      "cis": 45
+    },
+    {
+      "id": 299,
+      "label": "Image Stacks and Hyperstacks",
+      "group": "SAMP",
+      "cis": 1
+    },
+    {
+      "id": 300,
+      "label": "Region of Interest Readout",
+      "group": "SAMP",
+      "cis": 1
+    },
+    {
+      "id": 301,
+      "label": "Space-Bandwidth Product",
+      "group": "SAMP",
+      "cis": 3
+    },
+    {
+      "id": 302,
+      "label": "Data Rate",
+      "group": "SAMP",
+      "cis": 5
+    },
+    {
+      "id": 303,
+      "label": "Data Storage and Compression",
+      "group": "SAMP",
+      "cis": 4
+    },
+    {
+      "id": 304,
+      "label": "Lossless vs Lossy Compression",
+      "group": "SAMP",
+      "cis": 1
+    },
+    {
+      "id": 305,
+      "label": "Image File Formats",
+      "group": "SAMP",
+      "cis": 5
+    },
+    {
+      "id": 306,
+      "label": "OME Metadata Standards",
+      "group": "SAMP",
+      "cis": 2
+    },
+    {
+      "id": 307,
+      "label": "Chunked Data Formats",
+      "group": "SAMP",
+      "cis": 2
+    },
+    {
+      "id": 308,
+      "label": "Hardware Triggering",
+      "group": "SAMP",
+      "cis": 9
+    },
+    {
+      "id": 309,
+      "label": "Tiling and Stitching",
+      "group": "SAMP",
+      "cis": 1
+    },
+    {
+      "id": 310,
+      "label": "Microscope Control Software",
+      "group": "SAMP",
+      "cis": 6
+    },
+    {
+      "id": 311,
+      "label": "Point Scanning",
+      "group": "SCAN",
+      "cis": 43
+    },
+    {
+      "id": 312,
+      "label": "Laser Scanning Microscope",
+      "group": "SCAN",
+      "cis": 42
+    },
+    {
+      "id": 313,
+      "label": "Scan Lens",
+      "group": "SCAN",
+      "cis": 2
+    },
+    {
+      "id": 314,
+      "label": "Scanner Pupil Relay",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 315,
+      "label": "Galvanometric Scanner",
+      "group": "SCAN",
+      "cis": 6
+    },
+    {
+      "id": 316,
+      "label": "Resonant Scanner",
+      "group": "SCAN",
+      "cis": 2
+    },
+    {
+      "id": 317,
+      "label": "Polygon Scanner",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 318,
+      "label": "Acousto-Optic Deflector",
+      "group": "SCAN",
+      "cis": 2
+    },
+    {
+      "id": 319,
+      "label": "Raster Scan Pattern",
+      "group": "SCAN",
+      "cis": 3
+    },
+    {
+      "id": 320,
+      "label": "Pixel Dwell Time",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 321,
+      "label": "Scan Linearity Correction",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 322,
+      "label": "Random-Access Scanning",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 323,
+      "label": "Descanned Detection",
+      "group": "SCAN",
+      "cis": 17
+    },
+    {
+      "id": 324,
+      "label": "Confocal Pinhole",
+      "group": "SCAN",
+      "cis": 15
+    },
+    {
+      "id": 325,
+      "label": "Airy Unit",
+      "group": "SCAN",
+      "cis": 3
+    },
+    {
+      "id": 326,
+      "label": "Optical Sectioning",
+      "group": "SCAN",
+      "cis": 11
+    },
+    {
+      "id": 327,
+      "label": "Confocal Microscopy",
+      "group": "SCAN",
+      "cis": 5
+    },
+    {
+      "id": 328,
+      "label": "Confocal Resolution",
+      "group": "SCAN",
+      "cis": 2
+    },
+    {
+      "id": 329,
+      "label": "Spinning Disk Confocal",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 330,
+      "label": "Line-Scanning Confocal",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 331,
+      "label": "Image Scanning Microscopy",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 332,
+      "label": "Excitation Power Control",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 333,
+      "label": "Ultrafast Pulsed Laser",
+      "group": "SCAN",
+      "cis": 17
+    },
+    {
+      "id": 334,
+      "label": "Ti:Sapphire Laser",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 335,
+      "label": "Pulse Width and Repetition Rate",
+      "group": "SCAN",
+      "cis": 4
+    },
+    {
+      "id": 336,
+      "label": "Group Delay Dispersion",
+      "group": "SCAN",
+      "cis": 3
+    },
+    {
+      "id": 337,
+      "label": "Pulse Compression",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 338,
+      "label": "Nonlinear Optical Response",
+      "group": "SCAN",
+      "cis": 13
+    },
+    {
+      "id": 339,
+      "label": "Two-Photon Absorption",
+      "group": "SCAN",
+      "cis": 9
+    },
+    {
+      "id": 340,
+      "label": "Two-Photon Excitation Microscopy",
+      "group": "SCAN",
+      "cis": 8
+    },
+    {
+      "id": 341,
+      "label": "Intrinsic Optical Sectioning",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 342,
+      "label": "Non-Descanned Detection",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 343,
+      "label": "Three-Photon Microscopy",
+      "group": "SCAN",
+      "cis": 2
+    },
+    {
+      "id": 344,
+      "label": "Second Harmonic Generation",
+      "group": "SCAN",
+      "cis": 2
+    },
+    {
+      "id": 345,
+      "label": "Third Harmonic Generation",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 346,
+      "label": "Coherent Raman Imaging",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 347,
+      "label": "Imaging Depth Limit",
+      "group": "SCAN",
+      "cis": 2
+    },
+    {
+      "id": 348,
+      "label": "Fluorescence Lifetime Imaging",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 349,
+      "label": "Temporal Focusing",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 350,
+      "label": "Electrically Tunable Lens",
+      "group": "SCAN",
+      "cis": 1
+    },
+    {
+      "id": 351,
+      "label": "Remote Focusing",
+      "group": "SCAN",
+      "cis": 2
+    },
+    {
+      "id": 352,
+      "label": "Wavefront Aberration",
+      "group": "AO",
+      "cis": 43
+    },
+    {
+      "id": 353,
+      "label": "Zernike Polynomials",
+      "group": "AO",
+      "cis": 8
+    },
+    {
+      "id": 354,
+      "label": "RMS Wavefront Error",
+      "group": "AO",
+      "cis": 3
+    },
+    {
+      "id": 355,
+      "label": "Strehl Ratio",
+      "group": "AO",
+      "cis": 2
+    },
+    {
+      "id": 356,
+      "label": "Marechal Criterion",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 357,
+      "label": "Sample-Induced Aberrations",
+      "group": "AO",
+      "cis": 8
+    },
+    {
+      "id": 358,
+      "label": "Refractive Index Mismatch",
+      "group": "AO",
+      "cis": 2
+    },
+    {
+      "id": 359,
+      "label": "Scattering in Tissue",
+      "group": "AO",
+      "cis": 4
+    },
+    {
+      "id": 360,
+      "label": "Isoplanatic Patch",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 361,
+      "label": "Adaptive Optics",
+      "group": "AO",
+      "cis": 26
+    },
+    {
+      "id": 362,
+      "label": "Wavefront Corrector",
+      "group": "AO",
+      "cis": 12
+    },
+    {
+      "id": 363,
+      "label": "Deformable Mirror",
+      "group": "AO",
+      "cis": 2
+    },
+    {
+      "id": 364,
+      "label": "Actuator Count and Stroke",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 365,
+      "label": "Spatial Light Modulator",
+      "group": "AO",
+      "cis": 7
+    },
+    {
+      "id": 366,
+      "label": "Phase Wrapping in SLMs",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 367,
+      "label": "Pupil Conjugation",
+      "group": "AO",
+      "cis": 2
+    },
+    {
+      "id": 368,
+      "label": "Wavefront Sensing",
+      "group": "AO",
+      "cis": 5
+    },
+    {
+      "id": 369,
+      "label": "Shack-Hartmann Sensor",
+      "group": "AO",
+      "cis": 2
+    },
+    {
+      "id": 370,
+      "label": "Guide Star",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 371,
+      "label": "Closed-Loop AO Control",
+      "group": "AO",
+      "cis": 2
+    },
+    {
+      "id": 372,
+      "label": "Sensorless Adaptive Optics",
+      "group": "AO",
+      "cis": 5
+    },
+    {
+      "id": 373,
+      "label": "Image Quality Metric",
+      "group": "AO",
+      "cis": 2
+    },
+    {
+      "id": 374,
+      "label": "Modal Wavefront Correction",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 375,
+      "label": "Pupil Segmentation",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 376,
+      "label": "Wavefront Shaping",
+      "group": "AO",
+      "cis": 2
+    },
+    {
+      "id": 377,
+      "label": "Transmission Matrix",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 378,
+      "label": "Holographic Illumination",
+      "group": "AO",
+      "cis": 1
+    },
+    {
+      "id": 379,
+      "label": "Phase Retrieval",
+      "group": "AO",
+      "cis": 3
+    },
+    {
+      "id": 380,
+      "label": "Forward Imaging Model",
+      "group": "REST",
+      "cis": 103
+    },
+    {
+      "id": 381,
+      "label": "Image Noise Model",
+      "group": "REST",
+      "cis": 80
+    },
+    {
+      "id": 382,
+      "label": "Inverse Problem",
+      "group": "REST",
+      "cis": 22
+    },
+    {
+      "id": 383,
+      "label": "Ill-Posed Problem",
+      "group": "REST",
+      "cis": 5
+    },
+    {
+      "id": 384,
+      "label": "Deconvolution",
+      "group": "REST",
+      "cis": 16
+    },
+    {
+      "id": 385,
+      "label": "Inverse Filtering",
+      "group": "REST",
+      "cis": 5
+    },
+    {
+      "id": 386,
+      "label": "Noise Amplification",
+      "group": "REST",
+      "cis": 2
+    },
+    {
+      "id": 387,
+      "label": "Wiener Filter",
+      "group": "REST",
+      "cis": 2
+    },
+    {
+      "id": 388,
+      "label": "Regularization",
+      "group": "REST",
+      "cis": 4
+    },
+    {
+      "id": 389,
+      "label": "Tikhonov Regularization",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 390,
+      "label": "Total Variation Regularization",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 391,
+      "label": "Richardson-Lucy Algorithm",
+      "group": "REST",
+      "cis": 3
+    },
+    {
+      "id": 392,
+      "label": "Iteration Count and Convergence",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 393,
+      "label": "Deconvolution Artifacts",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 394,
+      "label": "FFT Boundary Handling",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 395,
+      "label": "Theoretical vs Measured PSF",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 396,
+      "label": "Blind Deconvolution",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 397,
+      "label": "Bayesian Image Restoration",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 398,
+      "label": "Multiview Deconvolution",
+      "group": "REST",
+      "cis": 2
+    },
+    {
+      "id": 399,
+      "label": "Background Estimation",
+      "group": "REST",
+      "cis": 63
+    },
+    {
+      "id": 400,
+      "label": "Image Denoising",
+      "group": "REST",
+      "cis": 14
+    },
+    {
+      "id": 401,
+      "label": "Gaussian and Median Filtering",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 402,
+      "label": "Non-Local Means Denoising",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 403,
+      "label": "Variance-Stabilizing Transform",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 404,
+      "label": "Computational Aberration Fix",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 405,
+      "label": "Fourier Ring Correlation",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 406,
+      "label": "Restoration Fidelity Metrics",
+      "group": "REST",
+      "cis": 1
+    },
+    {
+      "id": 407,
+      "label": "Image Preprocessing",
+      "group": "QUANT",
+      "cis": 62
+    },
+    {
+      "id": 408,
+      "label": "Intensity Histogram",
+      "group": "QUANT",
+      "cis": 31
+    },
+    {
+      "id": 409,
+      "label": "Contrast Adjustment and LUTs",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 410,
+      "label": "Image Registration",
+      "group": "QUANT",
+      "cis": 7
+    },
+    {
+      "id": 411,
+      "label": "Drift Correction",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 412,
+      "label": "Chromatic Registration",
+      "group": "QUANT",
+      "cis": 3
+    },
+    {
+      "id": 413,
+      "label": "Edge Detection",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 414,
+      "label": "Thresholding",
+      "group": "QUANT",
+      "cis": 29
+    },
+    {
+      "id": 415,
+      "label": "Otsu's Method",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 416,
+      "label": "Image Segmentation",
+      "group": "QUANT",
+      "cis": 27
+    },
+    {
+      "id": 417,
+      "label": "Morphological Operations",
+      "group": "QUANT",
+      "cis": 2
+    },
+    {
+      "id": 418,
+      "label": "Connected Component Labeling",
+      "group": "QUANT",
+      "cis": 15
+    },
+    {
+      "id": 419,
+      "label": "Watershed Segmentation",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 420,
+      "label": "Feature Extraction",
+      "group": "QUANT",
+      "cis": 12
+    },
+    {
+      "id": 421,
+      "label": "Object Morphometry",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 422,
+      "label": "Intensity Quantification",
+      "group": "QUANT",
+      "cis": 3
+    },
+    {
+      "id": 423,
+      "label": "Spot Detection",
+      "group": "QUANT",
+      "cis": 18
+    },
+    {
+      "id": 424,
+      "label": "Sub-Pixel Localization",
+      "group": "QUANT",
+      "cis": 13
+    },
+    {
+      "id": 425,
+      "label": "Localization Precision",
+      "group": "QUANT",
+      "cis": 7
+    },
+    {
+      "id": 426,
+      "label": "Cramer-Rao Lower Bound",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 427,
+      "label": "Particle Tracking",
+      "group": "QUANT",
+      "cis": 5
+    },
+    {
+      "id": 428,
+      "label": "Trajectory Linking",
+      "group": "QUANT",
+      "cis": 4
+    },
+    {
+      "id": 429,
+      "label": "Trajectory Analysis",
+      "group": "QUANT",
+      "cis": 3
+    },
+    {
+      "id": 430,
+      "label": "Mean Squared Displacement",
+      "group": "QUANT",
+      "cis": 2
+    },
+    {
+      "id": 431,
+      "label": "Diffusion Coefficient",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 432,
+      "label": "Colocalization Analysis",
+      "group": "QUANT",
+      "cis": 2
+    },
+    {
+      "id": 433,
+      "label": "Pearson Correlation Coefficient",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 434,
+      "label": "Spatial Point Pattern Analysis",
+      "group": "QUANT",
+      "cis": 4
+    },
+    {
+      "id": 435,
+      "label": "Ripley's K Function",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 436,
+      "label": "Nearest-Neighbor Distance",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 437,
+      "label": "Density-Based Clustering",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 438,
+      "label": "Statistics of Image Data",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 439,
+      "label": "Image Analysis Software",
+      "group": "QUANT",
+      "cis": 7
+    },
+    {
+      "id": 440,
+      "label": "Image Analysis Pipeline",
+      "group": "QUANT",
+      "cis": 6
+    },
+    {
+      "id": 441,
+      "label": "Reproducible Analysis",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 442,
+      "label": "Large Dataset Processing",
+      "group": "QUANT",
+      "cis": 1
+    },
+    {
+      "id": 443,
+      "label": "Machine Learning",
+      "group": "ML",
+      "cis": 82
+    },
+    {
+      "id": 444,
+      "label": "Supervised Learning",
+      "group": "ML",
+      "cis": 42
+    },
+    {
+      "id": 445,
+      "label": "Training and Test Data",
+      "group": "ML",
+      "cis": 28
+    },
+    {
+      "id": 446,
+      "label": "Ground Truth Data",
+      "group": "ML",
+      "cis": 14
+    },
+    {
+      "id": 447,
+      "label": "Data Augmentation",
+      "group": "ML",
+      "cis": 2
+    },
+    {
+      "id": 448,
+      "label": "Loss Function",
+      "group": "ML",
+      "cis": 12
+    },
+    {
+      "id": 449,
+      "label": "Overfitting and Generalization",
+      "group": "ML",
+      "cis": 11
+    },
+    {
+      "id": 450,
+      "label": "Artificial Neural Network",
+      "group": "ML",
+      "cis": 34
+    },
+    {
+      "id": 451,
+      "label": "Convolutional Neural Network",
+      "group": "ML",
+      "cis": 29
+    },
+    {
+      "id": 452,
+      "label": "U-Net Architecture",
+      "group": "ML",
+      "cis": 17
+    },
+    {
+      "id": 453,
+      "label": "GPU Acceleration",
+      "group": "ML",
+      "cis": 4
+    },
+    {
+      "id": 454,
+      "label": "Image Classification",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 455,
+      "label": "Deep Learning Denoising",
+      "group": "ML",
+      "cis": 10
+    },
+    {
+      "id": 456,
+      "label": "Self-Supervised Denoising",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 457,
+      "label": "Content-Aware Restoration",
+      "group": "ML",
+      "cis": 8
+    },
+    {
+      "id": 458,
+      "label": "Learned Resolution Enhancement",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 459,
+      "label": "Deep Learning Segmentation",
+      "group": "ML",
+      "cis": 8
+    },
+    {
+      "id": 460,
+      "label": "Instance Segmentation",
+      "group": "ML",
+      "cis": 2
+    },
+    {
+      "id": 461,
+      "label": "Generalist Segmentation Models",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 462,
+      "label": "Segmentation Accuracy Metrics",
+      "group": "ML",
+      "cis": 5
+    },
+    {
+      "id": 463,
+      "label": "Virtual Staining",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 464,
+      "label": "Hallucination Artifacts",
+      "group": "ML",
+      "cis": 5
+    },
+    {
+      "id": 465,
+      "label": "Domain Shift",
+      "group": "ML",
+      "cis": 5
+    },
+    {
+      "id": 466,
+      "label": "Model Validation",
+      "group": "ML",
+      "cis": 4
+    },
+    {
+      "id": 467,
+      "label": "Uncertainty Estimation",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 468,
+      "label": "Verifying AI-Generated Content",
+      "group": "ML",
+      "cis": 2
+    },
+    {
+      "id": 469,
+      "label": "Smart Microscopy",
+      "group": "ML",
+      "cis": 5
+    },
+    {
+      "id": 470,
+      "label": "Real-Time Image Analysis",
+      "group": "ML",
+      "cis": 3
+    },
+    {
+      "id": 471,
+      "label": "Event-Driven Acquisition",
+      "group": "ML",
+      "cis": 2
+    },
+    {
+      "id": 472,
+      "label": "Adaptive Illumination Control",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 473,
+      "label": "Feedback Control in Microscopy",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 474,
+      "label": "Autofocus Algorithms",
+      "group": "ML",
+      "cis": 1
+    },
+    {
+      "id": 475,
+      "label": "Imaging Performance Trade-Offs",
+      "group": "ADV",
+      "cis": 9
+    },
+    {
+      "id": 476,
+      "label": "Light-Sheet Microscopy",
+      "group": "ADV",
+      "cis": 4
+    },
+    {
+      "id": 477,
+      "label": "Light-Sheet Thickness Trade-Off",
+      "group": "ADV",
+      "cis": 2
+    },
+    {
+      "id": 478,
+      "label": "Lattice Light-Sheet",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 479,
+      "label": "Oblique Plane Microscopy",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 480,
+      "label": "Super-Resolution Microscopy",
+      "group": "ADV",
+      "cis": 11
+    },
+    {
+      "id": 481,
+      "label": "Moire Fringes",
+      "group": "ADV",
+      "cis": 2
+    },
+    {
+      "id": 482,
+      "label": "Structured Illumination (SIM)",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 483,
+      "label": "STED Microscopy",
+      "group": "ADV",
+      "cis": 3
+    },
+    {
+      "id": 484,
+      "label": "STED Depletion Donut",
+      "group": "ADV",
+      "cis": 2
+    },
+    {
+      "id": 485,
+      "label": "Single-Molecule Localization",
+      "group": "ADV",
+      "cis": 5
+    },
+    {
+      "id": 486,
+      "label": "PALM and STORM",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 487,
+      "label": "3D Astigmatic Localization",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 488,
+      "label": "MINFLUX",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 489,
+      "label": "Labeling Density Limit",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 490,
+      "label": "Expansion Microscopy",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 491,
+      "label": "Light Field Microscopy",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 492,
+      "label": "Fourier Ptychography",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 493,
+      "label": "Optical Diffraction Tomography",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 494,
+      "label": "Optical Clearing",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 495,
+      "label": "Deep Tissue In Vivo Imaging",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 496,
+      "label": "de Broglie Wavelength",
+      "group": "ADV",
+      "cis": 27
+    },
+    {
+      "id": 497,
+      "label": "Electron Microscopy Basics",
+      "group": "ADV",
+      "cis": 26
+    },
+    {
+      "id": 498,
+      "label": "TEM and SEM",
+      "group": "ADV",
+      "cis": 13
+    },
+    {
+      "id": 499,
+      "label": "EM Resolution Limits",
+      "group": "ADV",
+      "cis": 12
+    },
+    {
+      "id": 500,
+      "label": "EM Sample Requirements",
+      "group": "ADV",
+      "cis": 12
+    },
+    {
+      "id": 501,
+      "label": "Light vs Electron Microscopy",
+      "group": "ADV",
+      "cis": 11
+    },
+    {
+      "id": 502,
+      "label": "Correlative Light and EM (CLEM)",
+      "group": "ADV",
+      "cis": 2
+    },
+    {
+      "id": 503,
+      "label": "CLEM Fiducial Markers",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 504,
+      "label": "Choosing an Imaging Technique",
+      "group": "ADV",
+      "cis": 8
+    },
+    {
+      "id": 505,
+      "label": "Microscope System Design",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 506,
+      "label": "Critical Reading of Papers",
+      "group": "ADV",
+      "cis": 6
+    },
+    {
+      "id": 507,
+      "label": "Interpreting Figures",
+      "group": "ADV",
+      "cis": 2
+    },
+    {
+      "id": 508,
+      "label": "Technical Report Writing",
+      "group": "ADV",
+      "cis": 3
+    },
+    {
+      "id": 509,
+      "label": "Citation Verification",
+      "group": "ADV",
+      "cis": 1
+    },
+    {
+      "id": 510,
+      "label": "Scientific Presentation",
+      "group": "ADV",
+      "cis": 1
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 6
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 2
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 11
+    },
+    {
+      "from": 14,
+      "to": 9
+    },
+    {
+      "from": 14,
+      "to": 11
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 15,
+      "to": 8
+    },
+    {
+      "from": 16,
+      "to": 11
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 11
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 23
+    },
+    {
+      "from": 26,
+      "to": 23
+    },
+    {
+      "from": 26,
+      "to": 19
+    },
+    {
+      "from": 27,
+      "to": 23
+    },
+    {
+      "from": 28,
+      "to": 23
+    },
+    {
+      "from": 29,
+      "to": 23
+    },
+    {
+      "from": 30,
+      "to": 24
+    },
+    {
+      "from": 31,
+      "to": 21
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 34,
+      "to": 4
+    },
+    {
+      "from": 35,
+      "to": 34
+    },
+    {
+      "from": 36,
+      "to": 35
+    },
+    {
+      "from": 36,
+      "to": 3
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 39,
+      "to": 36
+    },
+    {
+      "from": 40,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 36
+    },
+    {
+      "from": 42,
+      "to": 35
+    },
+    {
+      "from": 43,
+      "to": 41
+    },
+    {
+      "from": 43,
+      "to": 38
+    },
+    {
+      "from": 44,
+      "to": 34
+    },
+    {
+      "from": 45,
+      "to": 36
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 36
+    },
+    {
+      "from": 47,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 46
+    },
+    {
+      "from": 49,
+      "to": 46
+    },
+    {
+      "from": 49,
+      "to": 21
+    },
+    {
+      "from": 50,
+      "to": 35
+    },
+    {
+      "from": 51,
+      "to": 50
+    },
+    {
+      "from": 51,
+      "to": 41
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 52
+    },
+    {
+      "from": 55,
+      "to": 53
+    },
+    {
+      "from": 56,
+      "to": 39
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 59,
+      "to": 56
+    },
+    {
+      "from": 59,
+      "to": 46
+    },
+    {
+      "from": 60,
+      "to": 58
+    },
+    {
+      "from": 61,
+      "to": 39
+    },
+    {
+      "from": 62,
+      "to": 45
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 36
+    },
+    {
+      "from": 65,
+      "to": 64
+    },
+    {
+      "from": 66,
+      "to": 64
+    },
+    {
+      "from": 67,
+      "to": 64
+    },
+    {
+      "from": 68,
+      "to": 37
+    },
+    {
+      "from": 69,
+      "to": 68
+    },
+    {
+      "from": 70,
+      "to": 42
+    },
+    {
+      "from": 70,
+      "to": 19
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 52
+    },
+    {
+      "from": 72,
+      "to": 68
+    },
+    {
+      "from": 73,
+      "to": 43
+    },
+    {
+      "from": 73,
+      "to": 57
+    },
+    {
+      "from": 74,
+      "to": 73
+    },
+    {
+      "from": 75,
+      "to": 74
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 77
+    },
+    {
+      "from": 79,
+      "to": 77
+    },
+    {
+      "from": 80,
+      "to": 75
+    },
+    {
+      "from": 81,
+      "to": 74
+    },
+    {
+      "from": 81,
+      "to": 21
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 82,
+      "to": 80
+    },
+    {
+      "from": 83,
+      "to": 75
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 85,
+      "to": 83
+    },
+    {
+      "from": 86,
+      "to": 83
+    },
+    {
+      "from": 87,
+      "to": 83
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 85
+    },
+    {
+      "from": 89,
+      "to": 77
+    },
+    {
+      "from": 90,
+      "to": 89
+    },
+    {
+      "from": 90,
+      "to": 85
+    },
+    {
+      "from": 91,
+      "to": 75
+    },
+    {
+      "from": 91,
+      "to": 89
+    },
+    {
+      "from": 92,
+      "to": 87
+    },
+    {
+      "from": 92,
+      "to": 84
+    },
+    {
+      "from": 93,
+      "to": 86
+    },
+    {
+      "from": 93,
+      "to": 87
+    },
+    {
+      "from": 94,
+      "to": 74
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 61
+    },
+    {
+      "from": 97,
+      "to": 94
+    },
+    {
+      "from": 98,
+      "to": 94
+    },
+    {
+      "from": 99,
+      "to": 94
+    },
+    {
+      "from": 100,
+      "to": 94
+    },
+    {
+      "from": 101,
+      "to": 96
+    },
+    {
+      "from": 102,
+      "to": 56
+    },
+    {
+      "from": 102,
+      "to": 76
+    },
+    {
+      "from": 103,
+      "to": 87
+    },
+    {
+      "from": 103,
+      "to": 39
+    },
+    {
+      "from": 104,
+      "to": 42
+    },
+    {
+      "from": 104,
+      "to": 50
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 106,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 12
+    },
+    {
+      "from": 108,
+      "to": 106
+    },
+    {
+      "from": 108,
+      "to": 107
+    },
+    {
+      "from": 109,
+      "to": 12
+    },
+    {
+      "from": 109,
+      "to": 36
+    },
+    {
+      "from": 109,
+      "to": 13
+    },
+    {
+      "from": 110,
+      "to": 107
+    },
+    {
+      "from": 110,
+      "to": 90
+    },
+    {
+      "from": 111,
+      "to": 107
+    },
+    {
+      "from": 111,
+      "to": 20
+    },
+    {
+      "from": 112,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 107
+    },
+    {
+      "from": 113,
+      "to": 51
+    },
+    {
+      "from": 114,
+      "to": 85
+    },
+    {
+      "from": 114,
+      "to": 109
+    },
+    {
+      "from": 114,
+      "to": 110
+    },
+    {
+      "from": 115,
+      "to": 114
+    },
+    {
+      "from": 115,
+      "to": 54
+    },
+    {
+      "from": 116,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 54
+    },
+    {
+      "from": 117,
+      "to": 114
+    },
+    {
+      "from": 117,
+      "to": 8
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 118,
+      "to": 112
+    },
+    {
+      "from": 118,
+      "to": 116
+    },
+    {
+      "from": 119,
+      "to": 114
+    },
+    {
+      "from": 119,
+      "to": 15
+    },
+    {
+      "from": 119,
+      "to": 115
+    },
+    {
+      "from": 120,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 15
+    },
+    {
+      "from": 121,
+      "to": 120
+    },
+    {
+      "from": 122,
+      "to": 120
+    },
+    {
+      "from": 123,
+      "to": 120
+    },
+    {
+      "from": 123,
+      "to": 103
+    },
+    {
+      "from": 124,
+      "to": 112
+    },
+    {
+      "from": 124,
+      "to": 103
+    },
+    {
+      "from": 125,
+      "to": 124
+    },
+    {
+      "from": 125,
+      "to": 113
+    },
+    {
+      "from": 126,
+      "to": 124
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 125
+    },
+    {
+      "from": 129,
+      "to": 118
+    },
+    {
+      "from": 129,
+      "to": 103
+    },
+    {
+      "from": 130,
+      "to": 118
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 129
+    },
+    {
+      "from": 132,
+      "to": 120
+    },
+    {
+      "from": 132,
+      "to": 130
+    },
+    {
+      "from": 133,
+      "to": 118
+    },
+    {
+      "from": 133,
+      "to": 9
+    },
+    {
+      "from": 134,
+      "to": 130
+    },
+    {
+      "from": 135,
+      "to": 118
+    },
+    {
+      "from": 135,
+      "to": 114
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 136,
+      "to": 20
+    },
+    {
+      "from": 137,
+      "to": 118
+    },
+    {
+      "from": 137,
+      "to": 46
+    },
+    {
+      "from": 137,
+      "to": 103
+    },
+    {
+      "from": 138,
+      "to": 115
+    },
+    {
+      "from": 138,
+      "to": 116
+    },
+    {
+      "from": 139,
+      "to": 77
+    },
+    {
+      "from": 139,
+      "to": 78
+    },
+    {
+      "from": 140,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 91
+    },
+    {
+      "from": 142,
+      "to": 141
+    },
+    {
+      "from": 143,
+      "to": 139
+    },
+    {
+      "from": 143,
+      "to": 103
+    },
+    {
+      "from": 144,
+      "to": 141
+    },
+    {
+      "from": 145,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 146,
+      "to": 139
+    },
+    {
+      "from": 147,
+      "to": 139
+    },
+    {
+      "from": 148,
+      "to": 143
+    },
+    {
+      "from": 148,
+      "to": 39
+    },
+    {
+      "from": 149,
+      "to": 148
+    },
+    {
+      "from": 150,
+      "to": 148
+    },
+    {
+      "from": 151,
+      "to": 143
+    },
+    {
+      "from": 152,
+      "to": 143
+    },
+    {
+      "from": 152,
+      "to": 95
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 143
+    },
+    {
+      "from": 154,
+      "to": 96
+    },
+    {
+      "from": 154,
+      "to": 99
+    },
+    {
+      "from": 155,
+      "to": 143
+    },
+    {
+      "from": 155,
+      "to": 90
+    },
+    {
+      "from": 156,
+      "to": 84
+    },
+    {
+      "from": 156,
+      "to": 145
+    },
+    {
+      "from": 157,
+      "to": 103
+    },
+    {
+      "from": 157,
+      "to": 143
+    },
+    {
+      "from": 158,
+      "to": 68
+    },
+    {
+      "from": 159,
+      "to": 158
+    },
+    {
+      "from": 160,
+      "to": 158
+    },
+    {
+      "from": 161,
+      "to": 72
+    },
+    {
+      "from": 161,
+      "to": 158
+    },
+    {
+      "from": 162,
+      "to": 158
+    },
+    {
+      "from": 162,
+      "to": 75
+    },
+    {
+      "from": 163,
+      "to": 162
+    },
+    {
+      "from": 163,
+      "to": 103
+    },
+    {
+      "from": 164,
+      "to": 163
+    },
+    {
+      "from": 164,
+      "to": 89
+    },
+    {
+      "from": 165,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 89
+    },
+    {
+      "from": 165,
+      "to": 84
+    },
+    {
+      "from": 165,
+      "to": 83
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 166,
+      "to": 164
+    },
+    {
+      "from": 167,
+      "to": 165
+    },
+    {
+      "from": 167,
+      "to": 138
+    },
+    {
+      "from": 168,
+      "to": 165
+    },
+    {
+      "from": 169,
+      "to": 143
+    },
+    {
+      "from": 169,
+      "to": 158
+    },
+    {
+      "from": 170,
+      "to": 143
+    },
+    {
+      "from": 170,
+      "to": 144
+    },
+    {
+      "from": 171,
+      "to": 62
+    },
+    {
+      "from": 171,
+      "to": 51
+    },
+    {
+      "from": 172,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 171
+    },
+    {
+      "from": 174,
+      "to": 171
+    },
+    {
+      "from": 175,
+      "to": 171
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 176,
+      "to": 63
+    },
+    {
+      "from": 177,
+      "to": 56
+    },
+    {
+      "from": 178,
+      "to": 91
+    },
+    {
+      "from": 179,
+      "to": 91
+    },
+    {
+      "from": 179,
+      "to": 70
+    },
+    {
+      "from": 180,
+      "to": 58
+    },
+    {
+      "from": 180,
+      "to": 161
+    },
+    {
+      "from": 181,
+      "to": 89
+    },
+    {
+      "from": 181,
+      "to": 165
+    },
+    {
+      "from": 182,
+      "to": 139
+    },
+    {
+      "from": 183,
+      "to": 182
+    },
+    {
+      "from": 183,
+      "to": 131
+    },
+    {
+      "from": 184,
+      "to": 182
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 186,
+      "to": 69
+    },
+    {
+      "from": 186,
+      "to": 62
+    },
+    {
+      "from": 187,
+      "to": 186
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 188
+    },
+    {
+      "from": 191,
+      "to": 188
+    },
+    {
+      "from": 192,
+      "to": 186
+    },
+    {
+      "from": 192,
+      "to": 63
+    },
+    {
+      "from": 193,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 192
+    },
+    {
+      "from": 194,
+      "to": 193
+    },
+    {
+      "from": 195,
+      "to": 188
+    },
+    {
+      "from": 196,
+      "to": 188
+    },
+    {
+      "from": 197,
+      "to": 190
+    },
+    {
+      "from": 198,
+      "to": 187
+    },
+    {
+      "from": 199,
+      "to": 194
+    },
+    {
+      "from": 199,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 188
+    },
+    {
+      "from": 201,
+      "to": 169
+    },
+    {
+      "from": 201,
+      "to": 174
+    },
+    {
+      "from": 201,
+      "to": 188
+    },
+    {
+      "from": 201,
+      "to": 189
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 202,
+      "to": 172
+    },
+    {
+      "from": 203,
+      "to": 202
+    },
+    {
+      "from": 203,
+      "to": 186
+    },
+    {
+      "from": 204,
+      "to": 203
+    },
+    {
+      "from": 205,
+      "to": 201
+    },
+    {
+      "from": 206,
+      "to": 205
+    },
+    {
+      "from": 206,
+      "to": 131
+    },
+    {
+      "from": 207,
+      "to": 188
+    },
+    {
+      "from": 207,
+      "to": 190
+    },
+    {
+      "from": 208,
+      "to": 188
+    },
+    {
+      "from": 208,
+      "to": 46
+    },
+    {
+      "from": 209,
+      "to": 195
+    },
+    {
+      "from": 209,
+      "to": 157
+    },
+    {
+      "from": 210,
+      "to": 60
+    },
+    {
+      "from": 210,
+      "to": 201
+    },
+    {
+      "from": 210,
+      "to": 103
+    },
+    {
+      "from": 211,
+      "to": 69
+    },
+    {
+      "from": 212,
+      "to": 211
+    },
+    {
+      "from": 213,
+      "to": 211
+    },
+    {
+      "from": 214,
+      "to": 25
+    },
+    {
+      "from": 214,
+      "to": 68
+    },
+    {
+      "from": 215,
+      "to": 24
+    },
+    {
+      "from": 216,
+      "to": 26
+    },
+    {
+      "from": 216,
+      "to": 212
+    },
+    {
+      "from": 217,
+      "to": 212
+    },
+    {
+      "from": 218,
+      "to": 217
+    },
+    {
+      "from": 218,
+      "to": 25
+    },
+    {
+      "from": 219,
+      "to": 27
+    },
+    {
+      "from": 219,
+      "to": 215
+    },
+    {
+      "from": 220,
+      "to": 214
+    },
+    {
+      "from": 220,
+      "to": 216
+    },
+    {
+      "from": 220,
+      "to": 218
+    },
+    {
+      "from": 220,
+      "to": 219
+    },
+    {
+      "from": 220,
+      "to": 213
+    },
+    {
+      "from": 221,
+      "to": 220
+    },
+    {
+      "from": 222,
+      "to": 212
+    },
+    {
+      "from": 223,
+      "to": 222
+    },
+    {
+      "from": 223,
+      "to": 216
+    },
+    {
+      "from": 224,
+      "to": 223
+    },
+    {
+      "from": 225,
+      "to": 224
+    },
+    {
+      "from": 225,
+      "to": 212
+    },
+    {
+      "from": 226,
+      "to": 224
+    },
+    {
+      "from": 227,
+      "to": 212
+    },
+    {
+      "from": 228,
+      "to": 227
+    },
+    {
+      "from": 229,
+      "to": 227
+    },
+    {
+      "from": 229,
+      "to": 213
+    },
+    {
+      "from": 230,
+      "to": 227
+    },
+    {
+      "from": 231,
+      "to": 230
+    },
+    {
+      "from": 232,
+      "to": 227
+    },
+    {
+      "from": 233,
+      "to": 232
+    },
+    {
+      "from": 233,
+      "to": 216
+    },
+    {
+      "from": 234,
+      "to": 232
+    },
+    {
+      "from": 235,
+      "to": 233
+    },
+    {
+      "from": 236,
+      "to": 230
+    },
+    {
+      "from": 237,
+      "to": 236
+    },
+    {
+      "from": 237,
+      "to": 231
+    },
+    {
+      "from": 238,
+      "to": 236
+    },
+    {
+      "from": 238,
+      "to": 220
+    },
+    {
+      "from": 239,
+      "to": 237
+    },
+    {
+      "from": 240,
+      "to": 217
+    },
+    {
+      "from": 241,
+      "to": 217
+    },
+    {
+      "from": 242,
+      "to": 211
+    },
+    {
+      "from": 243,
+      "to": 242
+    },
+    {
+      "from": 244,
+      "to": 242
+    },
+    {
+      "from": 244,
+      "to": 213
+    },
+    {
+      "from": 245,
+      "to": 212
+    },
+    {
+      "from": 246,
+      "to": 245
+    },
+    {
+      "from": 247,
+      "to": 242
+    },
+    {
+      "from": 247,
+      "to": 245
+    },
+    {
+      "from": 248,
+      "to": 243
+    },
+    {
+      "from": 248,
+      "to": 246
+    },
+    {
+      "from": 249,
+      "to": 248
+    },
+    {
+      "from": 250,
+      "to": 248
+    },
+    {
+      "from": 250,
+      "to": 190
+    },
+    {
+      "from": 251,
+      "to": 242
+    },
+    {
+      "from": 251,
+      "to": 233
+    },
+    {
+      "from": 252,
+      "to": 220
+    },
+    {
+      "from": 252,
+      "to": 233
+    },
+    {
+      "from": 252,
+      "to": 237
+    },
+    {
+      "from": 252,
+      "to": 238
+    },
+    {
+      "from": 252,
+      "to": 251
+    },
+    {
+      "from": 253,
+      "to": 225
+    },
+    {
+      "from": 253,
+      "to": 214
+    },
+    {
+      "from": 254,
+      "to": 253
+    },
+    {
+      "from": 254,
+      "to": 226
+    },
+    {
+      "from": 255,
+      "to": 254
+    },
+    {
+      "from": 255,
+      "to": 166
+    },
+    {
+      "from": 256,
+      "to": 45
+    },
+    {
+      "from": 257,
+      "to": 62
+    },
+    {
+      "from": 257,
+      "to": 256
+    },
+    {
+      "from": 258,
+      "to": 40
+    },
+    {
+      "from": 258,
+      "to": 256
+    },
+    {
+      "from": 259,
+      "to": 258
+    },
+    {
+      "from": 259,
+      "to": 2
+    },
+    {
+      "from": 260,
+      "to": 256
+    },
+    {
+      "from": 260,
+      "to": 215
+    },
+    {
+      "from": 261,
+      "to": 168
+    },
+    {
+      "from": 261,
+      "to": 257
+    },
+    {
+      "from": 262,
+      "to": 261
+    },
+    {
+      "from": 262,
+      "to": 64
+    },
+    {
+      "from": 262,
+      "to": 167
+    },
+    {
+      "from": 263,
+      "to": 261
+    },
+    {
+      "from": 264,
+      "to": 90
+    },
+    {
+      "from": 264,
+      "to": 13
+    },
+    {
+      "from": 264,
+      "to": 119
+    },
+    {
+      "from": 265,
+      "to": 259
+    },
+    {
+      "from": 265,
+      "to": 264
+    },
+    {
+      "from": 266,
+      "to": 265
+    },
+    {
+      "from": 267,
+      "to": 266
+    },
+    {
+      "from": 268,
+      "to": 263
+    },
+    {
+      "from": 268,
+      "to": 264
+    },
+    {
+      "from": 269,
+      "to": 47
+    },
+    {
+      "from": 269,
+      "to": 49
+    },
+    {
+      "from": 270,
+      "to": 48
+    },
+    {
+      "from": 270,
+      "to": 49
+    },
+    {
+      "from": 271,
+      "to": 39
+    },
+    {
+      "from": 271,
+      "to": 46
+    },
+    {
+      "from": 272,
+      "to": 271
+    },
+    {
+      "from": 273,
+      "to": 269
+    },
+    {
+      "from": 273,
+      "to": 271
+    },
+    {
+      "from": 273,
+      "to": 272
+    },
+    {
+      "from": 274,
+      "to": 271
+    },
+    {
+      "from": 274,
+      "to": 269
+    },
+    {
+      "from": 275,
+      "to": 274
+    },
+    {
+      "from": 275,
+      "to": 258
+    },
+    {
+      "from": 276,
+      "to": 275
+    },
+    {
+      "from": 277,
+      "to": 51
+    },
+    {
+      "from": 277,
+      "to": 258
+    },
+    {
+      "from": 277,
+      "to": 177
+    },
+    {
+      "from": 278,
+      "to": 277
+    },
+    {
+      "from": 279,
+      "to": 278
+    },
+    {
+      "from": 279,
+      "to": 55
+    },
+    {
+      "from": 280,
+      "to": 278
+    },
+    {
+      "from": 281,
+      "to": 278
+    },
+    {
+      "from": 281,
+      "to": 106
+    },
+    {
+      "from": 282,
+      "to": 277
+    },
+    {
+      "from": 282,
+      "to": 59
+    },
+    {
+      "from": 283,
+      "to": 188
+    },
+    {
+      "from": 283,
+      "to": 256
+    },
+    {
+      "from": 284,
+      "to": 258
+    },
+    {
+      "from": 284,
+      "to": 283
+    },
+    {
+      "from": 285,
+      "to": 11
+    },
+    {
+      "from": 285,
+      "to": 7
+    },
+    {
+      "from": 286,
+      "to": 285
+    },
+    {
+      "from": 287,
+      "to": 286
+    },
+    {
+      "from": 288,
+      "to": 227
+    },
+    {
+      "from": 288,
+      "to": 145
+    },
+    {
+      "from": 289,
+      "to": 288
+    },
+    {
+      "from": 289,
+      "to": 123
+    },
+    {
+      "from": 289,
+      "to": 286
+    },
+    {
+      "from": 290,
+      "to": 289
+    },
+    {
+      "from": 290,
+      "to": 287
+    },
+    {
+      "from": 291,
+      "to": 227
+    },
+    {
+      "from": 291,
+      "to": 216
+    },
+    {
+      "from": 291,
+      "to": 288
+    },
+    {
+      "from": 292,
+      "to": 227
+    },
+    {
+      "from": 292,
+      "to": 9
+    },
+    {
+      "from": 293,
+      "to": 129
+    },
+    {
+      "from": 293,
+      "to": 285
+    },
+    {
+      "from": 294,
+      "to": 285
+    },
+    {
+      "from": 295,
+      "to": 294
+    },
+    {
+      "from": 295,
+      "to": 220
+    },
+    {
+      "from": 296,
+      "to": 224
+    },
+    {
+      "from": 297,
+      "to": 296
+    },
+    {
+      "from": 297,
+      "to": 223
+    },
+    {
+      "from": 298,
+      "to": 227
+    },
+    {
+      "from": 298,
+      "to": 296
+    },
+    {
+      "from": 299,
+      "to": 298
+    },
+    {
+      "from": 299,
+      "to": 293
+    },
+    {
+      "from": 300,
+      "to": 233
+    },
+    {
+      "from": 300,
+      "to": 156
+    },
+    {
+      "from": 301,
+      "to": 156
+    },
+    {
+      "from": 301,
+      "to": 123
+    },
+    {
+      "from": 302,
+      "to": 297
+    },
+    {
+      "from": 302,
+      "to": 294
+    },
+    {
+      "from": 302,
+      "to": 156
+    },
+    {
+      "from": 303,
+      "to": 302
+    },
+    {
+      "from": 304,
+      "to": 303
+    },
+    {
+      "from": 305,
+      "to": 298
+    },
+    {
+      "from": 306,
+      "to": 305
+    },
+    {
+      "from": 307,
+      "to": 305
+    },
+    {
+      "from": 307,
+      "to": 303
+    },
+    {
+      "from": 308,
+      "to": 295
+    },
+    {
+      "from": 308,
+      "to": 234
+    },
+    {
+      "from": 309,
+      "to": 156
+    },
+    {
+      "from": 309,
+      "to": 184
+    },
+    {
+      "from": 310,
+      "to": 308
+    },
+    {
+      "from": 310,
+      "to": 184
+    },
+    {
+      "from": 311,
+      "to": 118
+    },
+    {
+      "from": 311,
+      "to": 251
+    },
+    {
+      "from": 312,
+      "to": 311
+    },
+    {
+      "from": 312,
+      "to": 161
+    },
+    {
+      "from": 313,
+      "to": 91
+    },
+    {
+      "from": 313,
+      "to": 88
+    },
+    {
+      "from": 314,
+      "to": 313
+    },
+    {
+      "from": 314,
+      "to": 144
+    },
+    {
+      "from": 314,
+      "to": 155
+    },
+    {
+      "from": 315,
+      "to": 312
+    },
+    {
+      "from": 316,
+      "to": 315
+    },
+    {
+      "from": 317,
+      "to": 312
+    },
+    {
+      "from": 318,
+      "to": 312
+    },
+    {
+      "from": 318,
+      "to": 113
+    },
+    {
+      "from": 319,
+      "to": 315
+    },
+    {
+      "from": 320,
+      "to": 319
+    },
+    {
+      "from": 320,
+      "to": 294
+    },
+    {
+      "from": 321,
+      "to": 316
+    },
+    {
+      "from": 321,
+      "to": 319
+    },
+    {
+      "from": 322,
+      "to": 318
+    },
+    {
+      "from": 323,
+      "to": 312
+    },
+    {
+      "from": 323,
+      "to": 170
+    },
+    {
+      "from": 324,
+      "to": 323
+    },
+    {
+      "from": 324,
+      "to": 89
+    },
+    {
+      "from": 324,
+      "to": 112
+    },
+    {
+      "from": 325,
+      "to": 324
+    },
+    {
+      "from": 326,
+      "to": 324
+    },
+    {
+      "from": 326,
+      "to": 206
+    },
+    {
+      "from": 327,
+      "to": 326
+    },
+    {
+      "from": 327,
+      "to": 312
+    },
+    {
+      "from": 328,
+      "to": 327
+    },
+    {
+      "from": 328,
+      "to": 128
+    },
+    {
+      "from": 328,
+      "to": 325
+    },
+    {
+      "from": 329,
+      "to": 327
+    },
+    {
+      "from": 329,
+      "to": 233
+    },
+    {
+      "from": 330,
+      "to": 327
+    },
+    {
+      "from": 331,
+      "to": 328
+    },
+    {
+      "from": 331,
+      "to": 251
+    },
+    {
+      "from": 332,
+      "to": 312
+    },
+    {
+      "from": 332,
+      "to": 269
+    },
+    {
+      "from": 333,
+      "to": 72
+    },
+    {
+      "from": 334,
+      "to": 333
+    },
+    {
+      "from": 335,
+      "to": 333
+    },
+    {
+      "from": 336,
+      "to": 61
+    },
+    {
+      "from": 336,
+      "to": 335
+    },
+    {
+      "from": 337,
+      "to": 336
+    },
+    {
+      "from": 338,
+      "to": 45
+    },
+    {
+      "from": 338,
+      "to": 34
+    },
+    {
+      "from": 339,
+      "to": 338
+    },
+    {
+      "from": 339,
+      "to": 188
+    },
+    {
+      "from": 340,
+      "to": 339
+    },
+    {
+      "from": 340,
+      "to": 312
+    },
+    {
+      "from": 340,
+      "to": 333
+    },
+    {
+      "from": 341,
+      "to": 340
+    },
+    {
+      "from": 341,
+      "to": 326
+    },
+    {
+      "from": 342,
+      "to": 340
+    },
+    {
+      "from": 342,
+      "to": 323
+    },
+    {
+      "from": 343,
+      "to": 340
+    },
+    {
+      "from": 344,
+      "to": 338
+    },
+    {
+      "from": 344,
+      "to": 333
+    },
+    {
+      "from": 345,
+      "to": 344
+    },
+    {
+      "from": 346,
+      "to": 338
+    },
+    {
+      "from": 346,
+      "to": 333
+    },
+    {
+      "from": 347,
+      "to": 67
+    },
+    {
+      "from": 347,
+      "to": 340
+    },
+    {
+      "from": 348,
+      "to": 250
+    },
+    {
+      "from": 348,
+      "to": 312
+    },
+    {
+      "from": 349,
+      "to": 336
+    },
+    {
+      "from": 349,
+      "to": 113
+    },
+    {
+      "from": 349,
+      "to": 340
+    },
+    {
+      "from": 350,
+      "to": 76
+    },
+    {
+      "from": 350,
+      "to": 293
+    },
+    {
+      "from": 351,
+      "to": 143
+    },
+    {
+      "from": 351,
+      "to": 95
+    },
+    {
+      "from": 351,
+      "to": 293
+    },
+    {
+      "from": 352,
+      "to": 43
+    },
+    {
+      "from": 352,
+      "to": 94
+    },
+    {
+      "from": 352,
+      "to": 114
+    },
+    {
+      "from": 353,
+      "to": 352
+    },
+    {
+      "from": 354,
+      "to": 353
+    },
+    {
+      "from": 355,
+      "to": 118
+    },
+    {
+      "from": 355,
+      "to": 354
+    },
+    {
+      "from": 356,
+      "to": 355
+    },
+    {
+      "from": 357,
+      "to": 352
+    },
+    {
+      "from": 357,
+      "to": 39
+    },
+    {
+      "from": 358,
+      "to": 357
+    },
+    {
+      "from": 358,
+      "to": 148
+    },
+    {
+      "from": 359,
+      "to": 67
+    },
+    {
+      "from": 359,
+      "to": 357
+    },
+    {
+      "from": 360,
+      "to": 357
+    },
+    {
+      "from": 361,
+      "to": 352
+    },
+    {
+      "from": 361,
+      "to": 90
+    },
+    {
+      "from": 362,
+      "to": 361
+    },
+    {
+      "from": 363,
+      "to": 362
+    },
+    {
+      "from": 364,
+      "to": 363
+    },
+    {
+      "from": 364,
+      "to": 353
+    },
+    {
+      "from": 365,
+      "to": 362
+    },
+    {
+      "from": 365,
+      "to": 271
+    },
+    {
+      "from": 366,
+      "to": 365
+    },
+    {
+      "from": 367,
+      "to": 361
+    },
+    {
+      "from": 367,
+      "to": 89
+    },
+    {
+      "from": 368,
+      "to": 361
+    },
+    {
+      "from": 369,
+      "to": 368
+    },
+    {
+      "from": 369,
+      "to": 353
+    },
+    {
+      "from": 370,
+      "to": 369
+    },
+    {
+      "from": 370,
+      "to": 188
+    },
+    {
+      "from": 371,
+      "to": 368
+    },
+    {
+      "from": 371,
+      "to": 362
+    },
+    {
+      "from": 372,
+      "to": 361
+    },
+    {
+      "from": 372,
+      "to": 31
+    },
+    {
+      "from": 373,
+      "to": 372
+    },
+    {
+      "from": 373,
+      "to": 256
+    },
+    {
+      "from": 374,
+      "to": 353
+    },
+    {
+      "from": 374,
+      "to": 372
+    },
+    {
+      "from": 375,
+      "to": 372
+    },
+    {
+      "from": 375,
+      "to": 367
+    },
+    {
+      "from": 376,
+      "to": 365
+    },
+    {
+      "from": 376,
+      "to": 359
+    },
+    {
+      "from": 377,
+      "to": 376
+    },
+    {
+      "from": 377,
+      "to": 21
+    },
+    {
+      "from": 378,
+      "to": 365
+    },
+    {
+      "from": 378,
+      "to": 110
+    },
+    {
+      "from": 379,
+      "to": 114
+    },
+    {
+      "from": 379,
+      "to": 31
+    },
+    {
+      "from": 380,
+      "to": 133
+    },
+    {
+      "from": 380,
+      "to": 214
+    },
+    {
+      "from": 380,
+      "to": 216
+    },
+    {
+      "from": 381,
+      "to": 220
+    },
+    {
+      "from": 381,
+      "to": 380
+    },
+    {
+      "from": 382,
+      "to": 380
+    },
+    {
+      "from": 383,
+      "to": 382
+    },
+    {
+      "from": 383,
+      "to": 123
+    },
+    {
+      "from": 384,
+      "to": 382
+    },
+    {
+      "from": 384,
+      "to": 14
+    },
+    {
+      "from": 385,
+      "to": 384
+    },
+    {
+      "from": 386,
+      "to": 385
+    },
+    {
+      "from": 386,
+      "to": 381
+    },
+    {
+      "from": 387,
+      "to": 385
+    },
+    {
+      "from": 387,
+      "to": 24
+    },
+    {
+      "from": 388,
+      "to": 383
+    },
+    {
+      "from": 389,
+      "to": 388
+    },
+    {
+      "from": 389,
+      "to": 22
+    },
+    {
+      "from": 390,
+      "to": 388
+    },
+    {
+      "from": 391,
+      "to": 384
+    },
+    {
+      "from": 391,
+      "to": 25
+    },
+    {
+      "from": 391,
+      "to": 28
+    },
+    {
+      "from": 392,
+      "to": 391
+    },
+    {
+      "from": 393,
+      "to": 391
+    },
+    {
+      "from": 393,
+      "to": 387
+    },
+    {
+      "from": 393,
+      "to": 386
+    },
+    {
+      "from": 394,
+      "to": 384
+    },
+    {
+      "from": 394,
+      "to": 17
+    },
+    {
+      "from": 395,
+      "to": 134
+    },
+    {
+      "from": 395,
+      "to": 384
+    },
+    {
+      "from": 396,
+      "to": 384
+    },
+    {
+      "from": 396,
+      "to": 31
+    },
+    {
+      "from": 397,
+      "to": 29
+    },
+    {
+      "from": 397,
+      "to": 388
+    },
+    {
+      "from": 398,
+      "to": 384
+    },
+    {
+      "from": 398,
+      "to": 130
+    },
+    {
+      "from": 399,
+      "to": 381
+    },
+    {
+      "from": 400,
+      "to": 381
+    },
+    {
+      "from": 401,
+      "to": 400
+    },
+    {
+      "from": 401,
+      "to": 9
+    },
+    {
+      "from": 402,
+      "to": 400
+    },
+    {
+      "from": 403,
+      "to": 25
+    },
+    {
+      "from": 403,
+      "to": 400
+    },
+    {
+      "from": 404,
+      "to": 384
+    },
+    {
+      "from": 404,
+      "to": 379
+    },
+    {
+      "from": 405,
+      "to": 13
+    },
+    {
+      "from": 405,
+      "to": 128
+    },
+    {
+      "from": 406,
+      "to": 215
+    },
+    {
+      "from": 406,
+      "to": 384
+    },
+    {
+      "from": 407,
+      "to": 255
+    },
+    {
+      "from": 407,
+      "to": 399
+    },
+    {
+      "from": 408,
+      "to": 298
+    },
+    {
+      "from": 409,
+      "to": 408
+    },
+    {
+      "from": 410,
+      "to": 407
+    },
+    {
+      "from": 410,
+      "to": 31
+    },
+    {
+      "from": 411,
+      "to": 410
+    },
+    {
+      "from": 411,
+      "to": 183
+    },
+    {
+      "from": 412,
+      "to": 410
+    },
+    {
+      "from": 412,
+      "to": 96
+    },
+    {
+      "from": 413,
+      "to": 9
+    },
+    {
+      "from": 413,
+      "to": 407
+    },
+    {
+      "from": 414,
+      "to": 408
+    },
+    {
+      "from": 414,
+      "to": 407
+    },
+    {
+      "from": 415,
+      "to": 414
+    },
+    {
+      "from": 416,
+      "to": 414
+    },
+    {
+      "from": 417,
+      "to": 416
+    },
+    {
+      "from": 418,
+      "to": 416
+    },
+    {
+      "from": 419,
+      "to": 416
+    },
+    {
+      "from": 419,
+      "to": 417
+    },
+    {
+      "from": 420,
+      "to": 418
+    },
+    {
+      "from": 421,
+      "to": 420
+    },
+    {
+      "from": 422,
+      "to": 420
+    },
+    {
+      "from": 422,
+      "to": 254
+    },
+    {
+      "from": 423,
+      "to": 407
+    },
+    {
+      "from": 423,
+      "to": 118
+    },
+    {
+      "from": 424,
+      "to": 423
+    },
+    {
+      "from": 424,
+      "to": 19
+    },
+    {
+      "from": 424,
+      "to": 28
+    },
+    {
+      "from": 425,
+      "to": 424
+    },
+    {
+      "from": 425,
+      "to": 214
+    },
+    {
+      "from": 426,
+      "to": 425
+    },
+    {
+      "from": 427,
+      "to": 424
+    },
+    {
+      "from": 428,
+      "to": 427
+    },
+    {
+      "from": 429,
+      "to": 428
+    },
+    {
+      "from": 430,
+      "to": 429
+    },
+    {
+      "from": 431,
+      "to": 430
+    },
+    {
+      "from": 432,
+      "to": 422
+    },
+    {
+      "from": 432,
+      "to": 204
+    },
+    {
+      "from": 432,
+      "to": 412
+    },
+    {
+      "from": 433,
+      "to": 432
+    },
+    {
+      "from": 434,
+      "to": 423
+    },
+    {
+      "from": 434,
+      "to": 23
+    },
+    {
+      "from": 435,
+      "to": 434
+    },
+    {
+      "from": 436,
+      "to": 434
+    },
+    {
+      "from": 437,
+      "to": 434
+    },
+    {
+      "from": 438,
+      "to": 30
+    },
+    {
+      "from": 438,
+      "to": 420
+    },
+    {
+      "from": 439,
+      "to": 33
+    },
+    {
+      "from": 439,
+      "to": 298
+    },
+    {
+      "from": 440,
+      "to": 439
+    },
+    {
+      "from": 440,
+      "to": 420
+    },
+    {
+      "from": 440,
+      "to": 407
+    },
+    {
+      "from": 441,
+      "to": 440
+    },
+    {
+      "from": 441,
+      "to": 306
+    },
+    {
+      "from": 442,
+      "to": 440
+    },
+    {
+      "from": 442,
+      "to": 307
+    },
+    {
+      "from": 443,
+      "to": 31
+    },
+    {
+      "from": 443,
+      "to": 23
+    },
+    {
+      "from": 444,
+      "to": 443
+    },
+    {
+      "from": 445,
+      "to": 444
+    },
+    {
+      "from": 446,
+      "to": 445
+    },
+    {
+      "from": 447,
+      "to": 445
+    },
+    {
+      "from": 448,
+      "to": 444
+    },
+    {
+      "from": 448,
+      "to": 31
+    },
+    {
+      "from": 449,
+      "to": 445
+    },
+    {
+      "from": 449,
+      "to": 448
+    },
+    {
+      "from": 450,
+      "to": 443
+    },
+    {
+      "from": 450,
+      "to": 32
+    },
+    {
+      "from": 451,
+      "to": 450
+    },
+    {
+      "from": 451,
+      "to": 9
+    },
+    {
+      "from": 452,
+      "to": 451
+    },
+    {
+      "from": 453,
+      "to": 450
+    },
+    {
+      "from": 453,
+      "to": 17
+    },
+    {
+      "from": 454,
+      "to": 451
+    },
+    {
+      "from": 454,
+      "to": 444
+    },
+    {
+      "from": 455,
+      "to": 451
+    },
+    {
+      "from": 455,
+      "to": 400
+    },
+    {
+      "from": 456,
+      "to": 455
+    },
+    {
+      "from": 457,
+      "to": 455
+    },
+    {
+      "from": 457,
+      "to": 446
+    },
+    {
+      "from": 457,
+      "to": 452
+    },
+    {
+      "from": 458,
+      "to": 457
+    },
+    {
+      "from": 458,
+      "to": 128
+    },
+    {
+      "from": 459,
+      "to": 452
+    },
+    {
+      "from": 459,
+      "to": 416
+    },
+    {
+      "from": 460,
+      "to": 459
+    },
+    {
+      "from": 460,
+      "to": 418
+    },
+    {
+      "from": 461,
+      "to": 460
+    },
+    {
+      "from": 461,
+      "to": 447
+    },
+    {
+      "from": 462,
+      "to": 459
+    },
+    {
+      "from": 462,
+      "to": 446
+    },
+    {
+      "from": 463,
+      "to": 457
+    },
+    {
+      "from": 463,
+      "to": 284
+    },
+    {
+      "from": 464,
+      "to": 457
+    },
+    {
+      "from": 464,
+      "to": 449
+    },
+    {
+      "from": 465,
+      "to": 449
+    },
+    {
+      "from": 466,
+      "to": 464
+    },
+    {
+      "from": 466,
+      "to": 465
+    },
+    {
+      "from": 466,
+      "to": 462
+    },
+    {
+      "from": 467,
+      "to": 466
+    },
+    {
+      "from": 467,
+      "to": 29
+    },
+    {
+      "from": 468,
+      "to": 466
+    },
+    {
+      "from": 469,
+      "to": 310
+    },
+    {
+      "from": 469,
+      "to": 443
+    },
+    {
+      "from": 470,
+      "to": 469
+    },
+    {
+      "from": 470,
+      "to": 440
+    },
+    {
+      "from": 470,
+      "to": 453
+    },
+    {
+      "from": 471,
+      "to": 470
+    },
+    {
+      "from": 471,
+      "to": 308
+    },
+    {
+      "from": 472,
+      "to": 471
+    },
+    {
+      "from": 472,
+      "to": 196
+    },
+    {
+      "from": 473,
+      "to": 469
+    },
+    {
+      "from": 473,
+      "to": 371
+    },
+    {
+      "from": 474,
+      "to": 183
+    },
+    {
+      "from": 474,
+      "to": 373
+    },
+    {
+      "from": 475,
+      "to": 209
+    },
+    {
+      "from": 475,
+      "to": 128
+    },
+    {
+      "from": 475,
+      "to": 294
+    },
+    {
+      "from": 475,
+      "to": 156
+    },
+    {
+      "from": 475,
+      "to": 196
+    },
+    {
+      "from": 476,
+      "to": 71
+    },
+    {
+      "from": 476,
+      "to": 326
+    },
+    {
+      "from": 476,
+      "to": 233
+    },
+    {
+      "from": 477,
+      "to": 476
+    },
+    {
+      "from": 478,
+      "to": 477
+    },
+    {
+      "from": 478,
+      "to": 136
+    },
+    {
+      "from": 479,
+      "to": 476
+    },
+    {
+      "from": 479,
+      "to": 351
+    },
+    {
+      "from": 480,
+      "to": 124
+    },
+    {
+      "from": 480,
+      "to": 194
+    },
+    {
+      "from": 481,
+      "to": 13
+    },
+    {
+      "from": 481,
+      "to": 51
+    },
+    {
+      "from": 481,
+      "to": 287
+    },
+    {
+      "from": 482,
+      "to": 480
+    },
+    {
+      "from": 482,
+      "to": 120
+    },
+    {
+      "from": 482,
+      "to": 481
+    },
+    {
+      "from": 483,
+      "to": 480
+    },
+    {
+      "from": 483,
+      "to": 197
+    },
+    {
+      "from": 483,
+      "to": 135
+    },
+    {
+      "from": 484,
+      "to": 483
+    },
+    {
+      "from": 484,
+      "to": 365
+    },
+    {
+      "from": 485,
+      "to": 480
+    },
+    {
+      "from": 485,
+      "to": 425
+    },
+    {
+      "from": 485,
+      "to": 199
+    },
+    {
+      "from": 486,
+      "to": 485
+    },
+    {
+      "from": 487,
+      "to": 485
+    },
+    {
+      "from": 487,
+      "to": 98
+    },
+    {
+      "from": 487,
+      "to": 135
+    },
+    {
+      "from": 488,
+      "to": 485
+    },
+    {
+      "from": 488,
+      "to": 484
+    },
+    {
+      "from": 489,
+      "to": 485
+    },
+    {
+      "from": 489,
+      "to": 285
+    },
+    {
+      "from": 490,
+      "to": 480
+    },
+    {
+      "from": 491,
+      "to": 301
+    },
+    {
+      "from": 491,
+      "to": 228
+    },
+    {
+      "from": 491,
+      "to": 398
+    },
+    {
+      "from": 492,
+      "to": 379
+    },
+    {
+      "from": 492,
+      "to": 263
+    },
+    {
+      "from": 492,
+      "to": 301
+    },
+    {
+      "from": 493,
+      "to": 278
+    },
+    {
+      "from": 493,
+      "to": 109
+    },
+    {
+      "from": 493,
+      "to": 132
+    },
+    {
+      "from": 494,
+      "to": 359
+    },
+    {
+      "from": 494,
+      "to": 358
+    },
+    {
+      "from": 495,
+      "to": 347
+    },
+    {
+      "from": 495,
+      "to": 361
+    },
+    {
+      "from": 495,
+      "to": 343
+    },
+    {
+      "from": 496,
+      "to": 37
+    },
+    {
+      "from": 496,
+      "to": 69
+    },
+    {
+      "from": 497,
+      "to": 496
+    },
+    {
+      "from": 497,
+      "to": 124
+    },
+    {
+      "from": 498,
+      "to": 497
+    },
+    {
+      "from": 499,
+      "to": 497
+    },
+    {
+      "from": 499,
+      "to": 94
+    },
+    {
+      "from": 500,
+      "to": 498
+    },
+    {
+      "from": 501,
+      "to": 499
+    },
+    {
+      "from": 501,
+      "to": 500
+    },
+    {
+      "from": 501,
+      "to": 128
+    },
+    {
+      "from": 501,
+      "to": 283
+    },
+    {
+      "from": 502,
+      "to": 501
+    },
+    {
+      "from": 502,
+      "to": 410
+    },
+    {
+      "from": 503,
+      "to": 502
+    },
+    {
+      "from": 504,
+      "to": 475
+    },
+    {
+      "from": 504,
+      "to": 252
+    },
+    {
+      "from": 504,
+      "to": 501
+    },
+    {
+      "from": 505,
+      "to": 504
+    },
+    {
+      "from": 505,
+      "to": 165
+    },
+    {
+      "from": 505,
+      "to": 170
+    },
+    {
+      "from": 505,
+      "to": 289
+    },
+    {
+      "from": 506,
+      "to": 504
+    },
+    {
+      "from": 507,
+      "to": 506
+    },
+    {
+      "from": 507,
+      "to": 256
+    },
+    {
+      "from": 508,
+      "to": 506
+    },
+    {
+      "from": 509,
+      "to": 508
+    },
+    {
+      "from": 509,
+      "to": 468
+    },
+    {
+      "from": 510,
+      "to": 507
+    },
+    {
+      "from": 510,
+      "to": 508
+    }
+  ]
+}
