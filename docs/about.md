@@ -1,6 +1,6 @@
 # About
 
-An interactive intelligent textbook on modern microscopy, from optical principles and fluorescence to confocal, super-resolution, electron, and scanning-probe techniques.
+An interactive intelligent textbook on the engineering of modern optical microscopes, from wave optics and the point spread function to image sensors, contrast hardware, laser scanning, adaptive optics, and computational imaging.
 
 ## Audience
 

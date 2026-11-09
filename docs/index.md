@@ -1,6 +1,6 @@
 ---
 title: 'Advanced Topics in Modern Microscopy Techniques'
-description: 'An interactive intelligent textbook on modern microscopy, from optical principles and fluorescence to confocal, super-resolution, electron, and scanning-probe techniques.'
+description: 'An interactive intelligent textbook on the engineering of modern optical microscopes, from wave optics and the point spread function to image sensors, contrast hardware, laser scanning, adaptive optics, and computational imaging.'
 image: img/cover.png
 ---
 
@@ -10,7 +10,7 @@ image: img/cover.png
   ![Advanced Topics in Modern Microscopy Techniques cover](./img/cover.png){ width="100%" }
 </figure>
 
-An interactive intelligent textbook on modern microscopy, from optical principles and fluorescence to confocal, super-resolution, electron, and scanning-probe techniques.
+An interactive intelligent textbook on the engineering of modern optical microscopes, from wave optics and the point spread function to image sensors, contrast hardware, laser scanning, adaptive optics, and computational imaging.
 
 ## Getting Started
 
