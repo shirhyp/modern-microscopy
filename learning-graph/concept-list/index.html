@@ -1,0 +1,1423 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook on the engineering of modern optical microscopes, from wave optics and the point spread function to image sensors, contrast hardware, laser scanning, adaptive optics, and computational imaging.">
+      
+      
+        <meta name="author" content="Hye Yoon Park">
+      
+      
+        <link rel="canonical" href="https://shirhyp.github.io/modern-microscopy/learning-graph/concept-list/">
+      
+      
+        <link rel="prev" href="../course-description-assessment/">
+      
+      
+        <link rel="next" href="../concept-taxonomy/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Concept Enumeration - Advanced Topics in Modern Microscopy Techniques</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#concept-list" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Advanced Topics in Modern Microscopy Techniques" class="md-header__button md-logo" aria-label="Advanced Topics in Modern Microscopy Techniques" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Advanced Topics in Modern Microscopy Techniques
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Concept Enumeration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/shirhyp/modern-microscopy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Advanced Topics in Modern Microscopy Techniques" class="md-nav__button md-logo" aria-label="Advanced Topics in Modern Microscopy Techniques" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Advanced Topics in Modern Microscopy Techniques
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/shirhyp/modern-microscopy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapters
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Graph
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learning Graph
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course-description-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description Assessment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concept Enumeration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-taxonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concept Taxonomy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Graph Quality Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../taxonomy-distribution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Taxonomy Distribution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MicroSims
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/shirhyp/modern-microscopy/blob/main/docs/learning-graph/concept-list.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="concept-list">Concept List<a class="headerlink" href="#concept-list" title="Permanent link">&para;</a></h1>
+<p>This is the numbered list of the 510 concepts in the learning graph for Advanced Topics in Modern Microscopy Techniques. Each number is the concept's ConceptID.</p>
+<ol>
+<li>Complex Number</li>
+<li>Complex Exponential</li>
+<li>Phasor Notation</li>
+<li>Vector Calculus</li>
+<li>Linear System</li>
+<li>Linear Shift-Invariant System</li>
+<li>Dirac Delta Function</li>
+<li>Impulse Response</li>
+<li>Convolution</li>
+<li>Fourier Series</li>
+<li>Fourier Transform</li>
+<li>2D Fourier Transform</li>
+<li>Spatial Frequency</li>
+<li>Convolution Theorem</li>
+<li>Transfer Function</li>
+<li>Discrete Fourier Transform</li>
+<li>Fast Fourier Transform</li>
+<li>Rect and Sinc Functions</li>
+<li>Gaussian Function</li>
+<li>Bessel Function</li>
+<li>Matrix Algebra</li>
+<li>Linear Least Squares</li>
+<li>Probability Distribution</li>
+<li>Mean and Variance</li>
+<li>Poisson Distribution</li>
+<li>Gaussian Distribution</li>
+<li>Statistical Independence</li>
+<li>Maximum Likelihood Estimation</li>
+<li>Bayes Theorem</li>
+<li>Hypothesis Testing</li>
+<li>Optimization Methods</li>
+<li>Gradient Descent</li>
+<li>Python for Image Processing</li>
+<li>Maxwell's Equations</li>
+<li>Electromagnetic Wave Equation</li>
+<li>Plane Wave</li>
+<li>Wavelength and Frequency</li>
+<li>Wave Vector</li>
+<li>Refractive Index</li>
+<li>Optical Path Length</li>
+<li>Phase of a Wave</li>
+<li>Spherical Wave</li>
+<li>Wavefront</li>
+<li>Poynting Vector</li>
+<li>Optical Intensity</li>
+<li>Polarization of Light</li>
+<li>Linear Polarization</li>
+<li>Circular Polarization</li>
+<li>Jones Calculus</li>
+<li>Superposition Principle</li>
+<li>Interference</li>
+<li>Coherence</li>
+<li>Temporal Coherence</li>
+<li>Spatial Coherence</li>
+<li>Coherence Length</li>
+<li>Reflection and Refraction</li>
+<li>Snell's Law</li>
+<li>Total Internal Reflection</li>
+<li>Fresnel Equations</li>
+<li>Evanescent Wave</li>
+<li>Dispersion</li>
+<li>Absorption of Light</li>
+<li>Beer-Lambert Law</li>
+<li>Scattering of Light</li>
+<li>Rayleigh Scattering</li>
+<li>Mie Scattering</li>
+<li>Scattering Mean Free Path</li>
+<li>Photon</li>
+<li>Photon Energy</li>
+<li>Gaussian Beam</li>
+<li>Beam Waist and Rayleigh Range</li>
+<li>Laser</li>
+<li>Ray Optics Approximation</li>
+<li>Paraxial Approximation</li>
+<li>Thin Lens</li>
+<li>Focal Length</li>
+<li>Thin Lens Equation</li>
+<li>Lateral Magnification</li>
+<li>Real and Virtual Images</li>
+<li>Thick Lens and Principal Planes</li>
+<li>Ray Transfer Matrix</li>
+<li>Compound Lens Systems</li>
+<li>Aperture Stop</li>
+<li>Field Stop</li>
+<li>Entrance and Exit Pupils</li>
+<li>Chief Ray</li>
+<li>Marginal Ray</li>
+<li>Telecentricity</li>
+<li>Conjugate Planes</li>
+<li>Back Focal Plane</li>
+<li>4f Relay System</li>
+<li>Etendue</li>
+<li>Lagrange Invariant</li>
+<li>Optical Aberrations</li>
+<li>Spherical Aberration</li>
+<li>Chromatic Aberration</li>
+<li>Coma</li>
+<li>Astigmatism</li>
+<li>Field Curvature</li>
+<li>Distortion</li>
+<li>Achromatic Doublet</li>
+<li>Curved Mirror Focusing</li>
+<li>Numerical Aperture</li>
+<li>Huygens-Fresnel Principle</li>
+<li>Scalar Diffraction Theory</li>
+<li>Fresnel Diffraction</li>
+<li>Fraunhofer Diffraction</li>
+<li>Fresnel Number</li>
+<li>Angular Spectrum</li>
+<li>Lens as Fourier Transformer</li>
+<li>Circular Aperture Diffraction</li>
+<li>Airy Disk</li>
+<li>Diffraction Grating</li>
+<li>Pupil Function</li>
+<li>Coherent Imaging</li>
+<li>Incoherent Imaging</li>
+<li>Amplitude Spread Function</li>
+<li>Point Spread Function</li>
+<li>Coherent Transfer Function</li>
+<li>Optical Transfer Function</li>
+<li>Modulation Transfer Function</li>
+<li>Phase Transfer Function</li>
+<li>Cutoff Frequency</li>
+<li>Diffraction Limit</li>
+<li>Abbe Resolution Limit</li>
+<li>Rayleigh Criterion</li>
+<li>Sparrow Criterion</li>
+<li>Lateral Resolution</li>
+<li>Axial Resolution</li>
+<li>3D Point Spread Function</li>
+<li>Depth of Field</li>
+<li>Missing Cone Problem</li>
+<li>Image Formation Model</li>
+<li>PSF Measurement with Beads</li>
+<li>PSF Engineering</li>
+<li>Bessel Beam</li>
+<li>Vectorial High-NA Effects</li>
+<li>Partial Coherence</li>
+<li>Compound Microscope</li>
+<li>Finite Tube Length Design</li>
+<li>Infinity-Corrected Microscope</li>
+<li>Infinity Space</li>
+<li>Objective Lens</li>
+<li>Tube Lens</li>
+<li>Objective Magnification</li>
+<li>Eyepiece</li>
+<li>Inverted and Upright Stands</li>
+<li>Immersion Media</li>
+<li>Oil Immersion Objective</li>
+<li>Water Immersion Objective</li>
+<li>Working Distance</li>
+<li>Cover Glass Correction</li>
+<li>Correction Collar</li>
+<li>Plan Apochromat Objective</li>
+<li>Objective Back Aperture</li>
+<li>Field of View</li>
+<li>Collection Efficiency</li>
+<li>Light Sources for Microscopy</li>
+<li>Arc Lamps and Halogen Sources</li>
+<li>LED Illumination</li>
+<li>Laser Illumination</li>
+<li>Collector Lens</li>
+<li>Condenser Lens</li>
+<li>Critical Illumination</li>
+<li>Kohler Illumination</li>
+<li>Illumination Uniformity</li>
+<li>Condenser Aperture Setting</li>
+<li>Transmitted Light Path</li>
+<li>Epi-Illumination</li>
+<li>Detection Path</li>
+<li>Optical Filters</li>
+<li>Bandpass Filter</li>
+<li>Longpass and Shortpass Filters</li>
+<li>Dichroic Mirror</li>
+<li>Neutral Density Filter</li>
+<li>Optical Density</li>
+<li>Beam Splitter</li>
+<li>Relay Optics</li>
+<li>Beam Expander</li>
+<li>Optical Fiber Delivery</li>
+<li>Optical Alignment</li>
+<li>Mechanical Stability and Drift</li>
+<li>Focus Drift and Autofocus</li>
+<li>Motorized Stage</li>
+<li>Piezo Z Stage</li>
+<li>Absorption and Emission Spectra</li>
+<li>Jablonski Diagram</li>
+<li>Fluorescence</li>
+<li>Stokes Shift</li>
+<li>Fluorescence Lifetime</li>
+<li>Quantum Yield</li>
+<li>Extinction Coefficient</li>
+<li>Fluorophore Brightness</li>
+<li>Fluorescent Probes</li>
+<li>Photobleaching</li>
+<li>Phototoxicity</li>
+<li>Fluorescence Saturation</li>
+<li>Triplet State and Blinking</li>
+<li>Photoswitchable Fluorophores</li>
+<li>Autofluorescence</li>
+<li>Epi-Fluorescence Microscope</li>
+<li>Filter Cube</li>
+<li>Spectral Bleed-Through</li>
+<li>Multicolor Imaging</li>
+<li>Widefield Fluorescence</li>
+<li>Out-of-Focus Background</li>
+<li>FRET</li>
+<li>Fluorescence Anisotropy</li>
+<li>Photon Budget</li>
+<li>TIRF Microscopy</li>
+<li>Photoelectric Effect</li>
+<li>Photodiode</li>
+<li>Quantum Efficiency</li>
+<li>Photon Shot Noise</li>
+<li>Signal-to-Noise Ratio</li>
+<li>Read Noise</li>
+<li>Dark Current</li>
+<li>Dark Noise</li>
+<li>Noise Addition in Quadrature</li>
+<li>Detector SNR Model</li>
+<li>Shot-Noise-Limited Detection</li>
+<li>Full Well Capacity</li>
+<li>Dynamic Range</li>
+<li>Analog-to-Digital Converter</li>
+<li>Camera Gain</li>
+<li>Camera Offset</li>
+<li>Image Sensor Pixel</li>
+<li>Fill Factor and Microlenses</li>
+<li>Back-Illuminated Sensor</li>
+<li>CCD Sensor</li>
+<li>CCD Charge Transfer Readout</li>
+<li>CMOS Sensor</li>
+<li>sCMOS Camera</li>
+<li>Rolling and Global Shutter</li>
+<li>Pixel-Dependent Noise in sCMOS</li>
+<li>Electron Multiplication</li>
+<li>EMCCD Camera</li>
+<li>Excess Noise Factor</li>
+<li>Clock-Induced Charge</li>
+<li>Camera Cooling</li>
+<li>Hot Pixels</li>
+<li>Photomultiplier Tube</li>
+<li>PMT Dynode Gain</li>
+<li>Photocathode Materials</li>
+<li>Avalanche Photodiode</li>
+<li>Single-Photon Avalanche Diode</li>
+<li>Hybrid Photodetector</li>
+<li>Photon Counting</li>
+<li>Dead Time and Pile-Up</li>
+<li>Time-Correlated Photon Counting</li>
+<li>Point Detectors vs Cameras</li>
+<li>Detector Selection</li>
+<li>Photon Transfer Curve</li>
+<li>Camera Calibration</li>
+<li>Flat-Field Correction</li>
+<li>Image Contrast</li>
+<li>Amplitude Object</li>
+<li>Phase Object</li>
+<li>Weak Phase Object Approximation</li>
+<li>Contrast-to-Noise Ratio</li>
+<li>Brightfield Microscopy</li>
+<li>Darkfield Microscopy</li>
+<li>Oblique Illumination</li>
+<li>Fourier Plane Filtering</li>
+<li>Zernike Phase Contrast</li>
+<li>Phase Ring and Annulus</li>
+<li>Phase Contrast Halo Artifact</li>
+<li>Hoffman Modulation Contrast</li>
+<li>Polarizer and Analyzer</li>
+<li>Wave Plates</li>
+<li>Birefringence</li>
+<li>Retardance</li>
+<li>Polarized Light Microscopy</li>
+<li>Wollaston and Nomarski Prisms</li>
+<li>DIC Microscopy</li>
+<li>DIC Shear and Bias</li>
+<li>Interference Microscopy</li>
+<li>Quantitative Phase Imaging</li>
+<li>Digital Holographic Microscopy</li>
+<li>Phase Unwrapping</li>
+<li>Transport of Intensity Equation</li>
+<li>Interference Reflection (IRM)</li>
+<li>Fluorescence Contrast</li>
+<li>Label-Free vs Labeled Contrast</li>
+<li>Nyquist-Shannon Sampling</li>
+<li>Nyquist Frequency</li>
+<li>Aliasing</li>
+<li>Pixel Size in Sample Space</li>
+<li>Nyquist Pixel Size Matching</li>
+<li>Oversampling and Undersampling</li>
+<li>Pixel Binning</li>
+<li>Pixel Integration Effect</li>
+<li>Axial Sampling Step</li>
+<li>Temporal Sampling</li>
+<li>Exposure Time</li>
+<li>Quantization</li>
+<li>Bit Depth</li>
+<li>Digital Image Representation</li>
+<li>Image Stacks and Hyperstacks</li>
+<li>Region of Interest Readout</li>
+<li>Space-Bandwidth Product</li>
+<li>Data Rate</li>
+<li>Data Storage and Compression</li>
+<li>Lossless vs Lossy Compression</li>
+<li>Image File Formats</li>
+<li>OME Metadata Standards</li>
+<li>Chunked Data Formats</li>
+<li>Hardware Triggering</li>
+<li>Tiling and Stitching</li>
+<li>Microscope Control Software</li>
+<li>Point Scanning</li>
+<li>Laser Scanning Microscope</li>
+<li>Scan Lens</li>
+<li>Scanner Pupil Relay</li>
+<li>Galvanometric Scanner</li>
+<li>Resonant Scanner</li>
+<li>Polygon Scanner</li>
+<li>Acousto-Optic Deflector</li>
+<li>Raster Scan Pattern</li>
+<li>Pixel Dwell Time</li>
+<li>Scan Linearity Correction</li>
+<li>Random-Access Scanning</li>
+<li>Descanned Detection</li>
+<li>Confocal Pinhole</li>
+<li>Airy Unit</li>
+<li>Optical Sectioning</li>
+<li>Confocal Microscopy</li>
+<li>Confocal Resolution</li>
+<li>Spinning Disk Confocal</li>
+<li>Line-Scanning Confocal</li>
+<li>Image Scanning Microscopy</li>
+<li>Excitation Power Control</li>
+<li>Ultrafast Pulsed Laser</li>
+<li>Ti:Sapphire Laser</li>
+<li>Pulse Width and Repetition Rate</li>
+<li>Group Delay Dispersion</li>
+<li>Pulse Compression</li>
+<li>Nonlinear Optical Response</li>
+<li>Two-Photon Absorption</li>
+<li>Two-Photon Excitation Microscopy</li>
+<li>Intrinsic Optical Sectioning</li>
+<li>Non-Descanned Detection</li>
+<li>Three-Photon Microscopy</li>
+<li>Second Harmonic Generation</li>
+<li>Third Harmonic Generation</li>
+<li>Coherent Raman Imaging</li>
+<li>Imaging Depth Limit</li>
+<li>Fluorescence Lifetime Imaging</li>
+<li>Temporal Focusing</li>
+<li>Electrically Tunable Lens</li>
+<li>Remote Focusing</li>
+<li>Wavefront Aberration</li>
+<li>Zernike Polynomials</li>
+<li>RMS Wavefront Error</li>
+<li>Strehl Ratio</li>
+<li>Marechal Criterion</li>
+<li>Sample-Induced Aberrations</li>
+<li>Refractive Index Mismatch</li>
+<li>Scattering in Tissue</li>
+<li>Isoplanatic Patch</li>
+<li>Adaptive Optics</li>
+<li>Wavefront Corrector</li>
+<li>Deformable Mirror</li>
+<li>Actuator Count and Stroke</li>
+<li>Spatial Light Modulator</li>
+<li>Phase Wrapping in SLMs</li>
+<li>Pupil Conjugation</li>
+<li>Wavefront Sensing</li>
+<li>Shack-Hartmann Sensor</li>
+<li>Guide Star</li>
+<li>Closed-Loop AO Control</li>
+<li>Sensorless Adaptive Optics</li>
+<li>Image Quality Metric</li>
+<li>Modal Wavefront Correction</li>
+<li>Pupil Segmentation</li>
+<li>Wavefront Shaping</li>
+<li>Transmission Matrix</li>
+<li>Holographic Illumination</li>
+<li>Phase Retrieval</li>
+<li>Forward Imaging Model</li>
+<li>Image Noise Model</li>
+<li>Inverse Problem</li>
+<li>Ill-Posed Problem</li>
+<li>Deconvolution</li>
+<li>Inverse Filtering</li>
+<li>Noise Amplification</li>
+<li>Wiener Filter</li>
+<li>Regularization</li>
+<li>Tikhonov Regularization</li>
+<li>Total Variation Regularization</li>
+<li>Richardson-Lucy Algorithm</li>
+<li>Iteration Count and Convergence</li>
+<li>Deconvolution Artifacts</li>
+<li>FFT Boundary Handling</li>
+<li>Theoretical vs Measured PSF</li>
+<li>Blind Deconvolution</li>
+<li>Bayesian Image Restoration</li>
+<li>Multiview Deconvolution</li>
+<li>Background Estimation</li>
+<li>Image Denoising</li>
+<li>Gaussian and Median Filtering</li>
+<li>Non-Local Means Denoising</li>
+<li>Variance-Stabilizing Transform</li>
+<li>Computational Aberration Fix</li>
+<li>Fourier Ring Correlation</li>
+<li>Restoration Fidelity Metrics</li>
+<li>Image Preprocessing</li>
+<li>Intensity Histogram</li>
+<li>Contrast Adjustment and LUTs</li>
+<li>Image Registration</li>
+<li>Drift Correction</li>
+<li>Chromatic Registration</li>
+<li>Edge Detection</li>
+<li>Thresholding</li>
+<li>Otsu's Method</li>
+<li>Image Segmentation</li>
+<li>Morphological Operations</li>
+<li>Connected Component Labeling</li>
+<li>Watershed Segmentation</li>
+<li>Feature Extraction</li>
+<li>Object Morphometry</li>
+<li>Intensity Quantification</li>
+<li>Spot Detection</li>
+<li>Sub-Pixel Localization</li>
+<li>Localization Precision</li>
+<li>Cramer-Rao Lower Bound</li>
+<li>Particle Tracking</li>
+<li>Trajectory Linking</li>
+<li>Trajectory Analysis</li>
+<li>Mean Squared Displacement</li>
+<li>Diffusion Coefficient</li>
+<li>Colocalization Analysis</li>
+<li>Pearson Correlation Coefficient</li>
+<li>Spatial Point Pattern Analysis</li>
+<li>Ripley's K Function</li>
+<li>Nearest-Neighbor Distance</li>
+<li>Density-Based Clustering</li>
+<li>Statistics of Image Data</li>
+<li>Image Analysis Software</li>
+<li>Image Analysis Pipeline</li>
+<li>Reproducible Analysis</li>
+<li>Large Dataset Processing</li>
+<li>Machine Learning</li>
+<li>Supervised Learning</li>
+<li>Training and Test Data</li>
+<li>Ground Truth Data</li>
+<li>Data Augmentation</li>
+<li>Loss Function</li>
+<li>Overfitting and Generalization</li>
+<li>Artificial Neural Network</li>
+<li>Convolutional Neural Network</li>
+<li>U-Net Architecture</li>
+<li>GPU Acceleration</li>
+<li>Image Classification</li>
+<li>Deep Learning Denoising</li>
+<li>Self-Supervised Denoising</li>
+<li>Content-Aware Restoration</li>
+<li>Learned Resolution Enhancement</li>
+<li>Deep Learning Segmentation</li>
+<li>Instance Segmentation</li>
+<li>Generalist Segmentation Models</li>
+<li>Segmentation Accuracy Metrics</li>
+<li>Virtual Staining</li>
+<li>Hallucination Artifacts</li>
+<li>Domain Shift</li>
+<li>Model Validation</li>
+<li>Uncertainty Estimation</li>
+<li>Verifying AI-Generated Content</li>
+<li>Smart Microscopy</li>
+<li>Real-Time Image Analysis</li>
+<li>Event-Driven Acquisition</li>
+<li>Adaptive Illumination Control</li>
+<li>Feedback Control in Microscopy</li>
+<li>Autofocus Algorithms</li>
+<li>Imaging Performance Trade-Offs</li>
+<li>Light-Sheet Microscopy</li>
+<li>Light-Sheet Thickness Trade-Off</li>
+<li>Lattice Light-Sheet</li>
+<li>Oblique Plane Microscopy</li>
+<li>Super-Resolution Microscopy</li>
+<li>Moire Fringes</li>
+<li>Structured Illumination (SIM)</li>
+<li>STED Microscopy</li>
+<li>STED Depletion Donut</li>
+<li>Single-Molecule Localization</li>
+<li>PALM and STORM</li>
+<li>3D Astigmatic Localization</li>
+<li>MINFLUX</li>
+<li>Labeling Density Limit</li>
+<li>Expansion Microscopy</li>
+<li>Light Field Microscopy</li>
+<li>Fourier Ptychography</li>
+<li>Optical Diffraction Tomography</li>
+<li>Optical Clearing</li>
+<li>Deep Tissue In Vivo Imaging</li>
+<li>de Broglie Wavelength</li>
+<li>Electron Microscopy Basics</li>
+<li>TEM and SEM</li>
+<li>EM Resolution Limits</li>
+<li>EM Sample Requirements</li>
+<li>Light vs Electron Microscopy</li>
+<li>Correlative Light and EM (CLEM)</li>
+<li>CLEM Fiducial Markers</li>
+<li>Choosing an Imaging Technique</li>
+<li>Microscope System Design</li>
+<li>Critical Reading of Papers</li>
+<li>Interpreting Figures</li>
+<li>Technical Report Writing</li>
+<li>Citation Verification</li>
+<li>Scientific Presentation</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../course-description-assessment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Course Description Assessment">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Course Description Assessment
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../concept-taxonomy/" class="md-footer__link md-footer__link--next" aria-label="Next: Concept Taxonomy">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Concept Taxonomy
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Hye Yoon Park. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

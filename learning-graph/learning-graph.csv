@@ -1,0 +1,511 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Complex Number,,MATH
+2,Complex Exponential,1,MATH
+3,Phasor Notation,2,MATH
+4,Vector Calculus,,MATH
+5,Linear System,,MATH
+6,Linear Shift-Invariant System,5,MATH
+7,Dirac Delta Function,,MATH
+8,Impulse Response,6|7,MATH
+9,Convolution,6|8,MATH
+10,Fourier Series,2,MATH
+11,Fourier Transform,10,MATH
+12,2D Fourier Transform,11,MATH
+13,Spatial Frequency,11,MATH
+14,Convolution Theorem,9|11,MATH
+15,Transfer Function,14|8,MATH
+16,Discrete Fourier Transform,11,MATH
+17,Fast Fourier Transform,16,MATH
+18,Rect and Sinc Functions,11,MATH
+19,Gaussian Function,,MATH
+20,Bessel Function,,MATH
+21,Matrix Algebra,,MATH
+22,Linear Least Squares,21,MATH
+23,Probability Distribution,,MATH
+24,Mean and Variance,23,MATH
+25,Poisson Distribution,23,MATH
+26,Gaussian Distribution,23|19,MATH
+27,Statistical Independence,23,MATH
+28,Maximum Likelihood Estimation,23,MATH
+29,Bayes Theorem,23,MATH
+30,Hypothesis Testing,24,MATH
+31,Optimization Methods,21,MATH
+32,Gradient Descent,31,MATH
+33,Python for Image Processing,,MATH
+34,Maxwell's Equations,4,WAVE
+35,Electromagnetic Wave Equation,34,WAVE
+36,Plane Wave,35|3,WAVE
+37,Wavelength and Frequency,36,WAVE
+38,Wave Vector,36,WAVE
+39,Refractive Index,36,WAVE
+40,Optical Path Length,39,WAVE
+41,Phase of a Wave,36,WAVE
+42,Spherical Wave,35,WAVE
+43,Wavefront,41|38,WAVE
+44,Poynting Vector,34,WAVE
+45,Optical Intensity,36|44,WAVE
+46,Polarization of Light,36,WAVE
+47,Linear Polarization,46,WAVE
+48,Circular Polarization,46,WAVE
+49,Jones Calculus,46|21,WAVE
+50,Superposition Principle,35,WAVE
+51,Interference,50|41,WAVE
+52,Coherence,51,WAVE
+53,Temporal Coherence,52,WAVE
+54,Spatial Coherence,52,WAVE
+55,Coherence Length,53,WAVE
+56,Reflection and Refraction,39,WAVE
+57,Snell's Law,56,WAVE
+58,Total Internal Reflection,57,WAVE
+59,Fresnel Equations,56|46,WAVE
+60,Evanescent Wave,58,WAVE
+61,Dispersion,39,WAVE
+62,Absorption of Light,45,WAVE
+63,Beer-Lambert Law,62,WAVE
+64,Scattering of Light,36,WAVE
+65,Rayleigh Scattering,64,WAVE
+66,Mie Scattering,64,WAVE
+67,Scattering Mean Free Path,64,WAVE
+68,Photon,37,WAVE
+69,Photon Energy,68,WAVE
+70,Gaussian Beam,42|19,WAVE
+71,Beam Waist and Rayleigh Range,70,WAVE
+72,Laser,52|68,WAVE
+73,Ray Optics Approximation,43|57,GEOM
+74,Paraxial Approximation,73,GEOM
+75,Thin Lens,74,GEOM
+76,Focal Length,75,GEOM
+77,Thin Lens Equation,76,GEOM
+78,Lateral Magnification,77,GEOM
+79,Real and Virtual Images,77,GEOM
+80,Thick Lens and Principal Planes,75,GEOM
+81,Ray Transfer Matrix,74|21,GEOM
+82,Compound Lens Systems,81|80,GEOM
+83,Aperture Stop,75,GEOM
+84,Field Stop,83,GEOM
+85,Entrance and Exit Pupils,83,GEOM
+86,Chief Ray,83,GEOM
+87,Marginal Ray,83,GEOM
+88,Telecentricity,86|85,GEOM
+89,Conjugate Planes,77,GEOM
+90,Back Focal Plane,89|85,GEOM
+91,4f Relay System,75|89,GEOM
+92,Etendue,87|84,GEOM
+93,Lagrange Invariant,86|87,GEOM
+94,Optical Aberrations,74,GEOM
+95,Spherical Aberration,94,GEOM
+96,Chromatic Aberration,94|61,GEOM
+97,Coma,94,GEOM
+98,Astigmatism,94,GEOM
+99,Field Curvature,94,GEOM
+100,Distortion,94,GEOM
+101,Achromatic Doublet,96,GEOM
+102,Curved Mirror Focusing,56|76,GEOM
+103,Numerical Aperture,87|39,DIFF
+104,Huygens-Fresnel Principle,42|50,DIFF
+105,Scalar Diffraction Theory,104,DIFF
+106,Fresnel Diffraction,105,DIFF
+107,Fraunhofer Diffraction,105|12,DIFF
+108,Fresnel Number,106|107,DIFF
+109,Angular Spectrum,12|36|13,DIFF
+110,Lens as Fourier Transformer,107|90,DIFF
+111,Circular Aperture Diffraction,107|20,DIFF
+112,Airy Disk,111,DIFF
+113,Diffraction Grating,107|51,DIFF
+114,Pupil Function,85|109|110,DIFF
+115,Coherent Imaging,114|54,DIFF
+116,Incoherent Imaging,114|54,DIFF
+117,Amplitude Spread Function,114|8,DIFF
+118,Point Spread Function,117|112|116,DIFF
+119,Coherent Transfer Function,114|15|115,DIFF
+120,Optical Transfer Function,118|15,DIFF
+121,Modulation Transfer Function,120,DIFF
+122,Phase Transfer Function,120,DIFF
+123,Cutoff Frequency,120|103,DIFF
+124,Diffraction Limit,112|103,DIFF
+125,Abbe Resolution Limit,124|113,DIFF
+126,Rayleigh Criterion,124,DIFF
+127,Sparrow Criterion,126,DIFF
+128,Lateral Resolution,126|125,DIFF
+129,Axial Resolution,118|103,DIFF
+130,3D Point Spread Function,118|129,DIFF
+131,Depth of Field,129,DIFF
+132,Missing Cone Problem,120|130,DIFF
+133,Image Formation Model,118|9,DIFF
+134,PSF Measurement with Beads,130,DIFF
+135,PSF Engineering,118|114,DIFF
+136,Bessel Beam,135|20,DIFF
+137,Vectorial High-NA Effects,118|46|103,DIFF
+138,Partial Coherence,115|116,DIFF
+139,Compound Microscope,77|78,INST
+140,Finite Tube Length Design,139,INST
+141,Infinity-Corrected Microscope,139|91,INST
+142,Infinity Space,141,INST
+143,Objective Lens,139|103,INST
+144,Tube Lens,141,INST
+145,Objective Magnification,143|144,INST
+146,Eyepiece,139,INST
+147,Inverted and Upright Stands,139,INST
+148,Immersion Media,143|39,INST
+149,Oil Immersion Objective,148,INST
+150,Water Immersion Objective,148,INST
+151,Working Distance,143,INST
+152,Cover Glass Correction,143|95,INST
+153,Correction Collar,152,INST
+154,Plan Apochromat Objective,143|96|99,INST
+155,Objective Back Aperture,143|90,INST
+156,Field of View,84|145,INST
+157,Collection Efficiency,103|143,INST
+158,Light Sources for Microscopy,68,INST
+159,Arc Lamps and Halogen Sources,158,INST
+160,LED Illumination,158,INST
+161,Laser Illumination,72|158,INST
+162,Collector Lens,158|75,INST
+163,Condenser Lens,162|103,INST
+164,Critical Illumination,163|89,INST
+165,Kohler Illumination,163|89|84|83,INST
+166,Illumination Uniformity,165|164,INST
+167,Condenser Aperture Setting,165|138,INST
+168,Transmitted Light Path,165,INST
+169,Epi-Illumination,143|158,INST
+170,Detection Path,143|144,INST
+171,Optical Filters,62|51,INST
+172,Bandpass Filter,171,INST
+173,Longpass and Shortpass Filters,171,INST
+174,Dichroic Mirror,171,INST
+175,Neutral Density Filter,171,INST
+176,Optical Density,175|63,INST
+177,Beam Splitter,56,INST
+178,Relay Optics,91,INST
+179,Beam Expander,91|70,INST
+180,Optical Fiber Delivery,58|161,INST
+181,Optical Alignment,89|165,INST
+182,Mechanical Stability and Drift,139,INST
+183,Focus Drift and Autofocus,182|131,INST
+184,Motorized Stage,182,INST
+185,Piezo Z Stage,184,INST
+186,Absorption and Emission Spectra,69|62,FLUO
+187,Jablonski Diagram,186,FLUO
+188,Fluorescence,187,FLUO
+189,Stokes Shift,188,FLUO
+190,Fluorescence Lifetime,188,FLUO
+191,Quantum Yield,188,FLUO
+192,Extinction Coefficient,186|63,FLUO
+193,Fluorophore Brightness,191|192,FLUO
+194,Fluorescent Probes,193,FLUO
+195,Photobleaching,188,FLUO
+196,Phototoxicity,188,FLUO
+197,Fluorescence Saturation,190,FLUO
+198,Triplet State and Blinking,187,FLUO
+199,Photoswitchable Fluorophores,194|198,FLUO
+200,Autofluorescence,188,FLUO
+201,Epi-Fluorescence Microscope,169|174|188|189,FLUO
+202,Filter Cube,201|172,FLUO
+203,Spectral Bleed-Through,202|186,FLUO
+204,Multicolor Imaging,203,FLUO
+205,Widefield Fluorescence,201,FLUO
+206,Out-of-Focus Background,205|131,FLUO
+207,FRET,188|190,FLUO
+208,Fluorescence Anisotropy,188|46,FLUO
+209,Photon Budget,195|157,FLUO
+210,TIRF Microscopy,60|201|103,FLUO
+211,Photoelectric Effect,69,DET
+212,Photodiode,211,DET
+213,Quantum Efficiency,211,DET
+214,Photon Shot Noise,25|68,DET
+215,Signal-to-Noise Ratio,24,DET
+216,Read Noise,26|212,DET
+217,Dark Current,212,DET
+218,Dark Noise,217|25,DET
+219,Noise Addition in Quadrature,27|215,DET
+220,Detector SNR Model,214|216|218|219|213,DET
+221,Shot-Noise-Limited Detection,220,DET
+222,Full Well Capacity,212,DET
+223,Dynamic Range,222|216,DET
+224,Analog-to-Digital Converter,223,DET
+225,Camera Gain,224|212,DET
+226,Camera Offset,224,DET
+227,Image Sensor Pixel,212,DET
+228,Fill Factor and Microlenses,227,DET
+229,Back-Illuminated Sensor,227|213,DET
+230,CCD Sensor,227,DET
+231,CCD Charge Transfer Readout,230,DET
+232,CMOS Sensor,227,DET
+233,sCMOS Camera,232|216,DET
+234,Rolling and Global Shutter,232,DET
+235,Pixel-Dependent Noise in sCMOS,233,DET
+236,Electron Multiplication,230,DET
+237,EMCCD Camera,236|231,DET
+238,Excess Noise Factor,236|220,DET
+239,Clock-Induced Charge,237,DET
+240,Camera Cooling,217,DET
+241,Hot Pixels,217,DET
+242,Photomultiplier Tube,211,DET
+243,PMT Dynode Gain,242,DET
+244,Photocathode Materials,242|213,DET
+245,Avalanche Photodiode,212,DET
+246,Single-Photon Avalanche Diode,245,DET
+247,Hybrid Photodetector,242|245,DET
+248,Photon Counting,243|246,DET
+249,Dead Time and Pile-Up,248,DET
+250,Time-Correlated Photon Counting,248|190,DET
+251,Point Detectors vs Cameras,242|233,DET
+252,Detector Selection,220|233|237|238|251,DET
+253,Photon Transfer Curve,225|214,DET
+254,Camera Calibration,253|226,DET
+255,Flat-Field Correction,254|166,DET
+256,Image Contrast,45,CONT
+257,Amplitude Object,62|256,CONT
+258,Phase Object,40|256,CONT
+259,Weak Phase Object Approximation,258|2,CONT
+260,Contrast-to-Noise Ratio,256|215,CONT
+261,Brightfield Microscopy,168|257,CONT
+262,Darkfield Microscopy,261|64|167,CONT
+263,Oblique Illumination,261,CONT
+264,Fourier Plane Filtering,90|13|119,CONT
+265,Zernike Phase Contrast,259|264,CONT
+266,Phase Ring and Annulus,265,CONT
+267,Phase Contrast Halo Artifact,266,CONT
+268,Hoffman Modulation Contrast,263|264,CONT
+269,Polarizer and Analyzer,47|49,CONT
+270,Wave Plates,48|49,CONT
+271,Birefringence,39|46,CONT
+272,Retardance,271,CONT
+273,Polarized Light Microscopy,269|271|272,CONT
+274,Wollaston and Nomarski Prisms,271|269,CONT
+275,DIC Microscopy,274|258,CONT
+276,DIC Shear and Bias,275,CONT
+277,Interference Microscopy,51|258|177,CONT
+278,Quantitative Phase Imaging,277,CONT
+279,Digital Holographic Microscopy,278|55,CONT
+280,Phase Unwrapping,278,CONT
+281,Transport of Intensity Equation,278|106,CONT
+282,Interference Reflection (IRM),277|59,CONT
+283,Fluorescence Contrast,188|256,CONT
+284,Label-Free vs Labeled Contrast,258|283,CONT
+285,Nyquist-Shannon Sampling,11|7,SAMP
+286,Nyquist Frequency,285,SAMP
+287,Aliasing,286,SAMP
+288,Pixel Size in Sample Space,227|145,SAMP
+289,Nyquist Pixel Size Matching,288|123|286,SAMP
+290,Oversampling and Undersampling,289|287,SAMP
+291,Pixel Binning,227|216|288,SAMP
+292,Pixel Integration Effect,227|9,SAMP
+293,Axial Sampling Step,129|285,SAMP
+294,Temporal Sampling,285,SAMP
+295,Exposure Time,294|220,SAMP
+296,Quantization,224,SAMP
+297,Bit Depth,296|223,SAMP
+298,Digital Image Representation,227|296,SAMP
+299,Image Stacks and Hyperstacks,298|293,SAMP
+300,Region of Interest Readout,233|156,SAMP
+301,Space-Bandwidth Product,156|123,SAMP
+302,Data Rate,297|294|156,SAMP
+303,Data Storage and Compression,302,SAMP
+304,Lossless vs Lossy Compression,303,SAMP
+305,Image File Formats,298,SAMP
+306,OME Metadata Standards,305,SAMP
+307,Chunked Data Formats,305|303,SAMP
+308,Hardware Triggering,295|234,SAMP
+309,Tiling and Stitching,156|184,SAMP
+310,Microscope Control Software,308|184,SAMP
+311,Point Scanning,118|251,SCAN
+312,Laser Scanning Microscope,311|161,SCAN
+313,Scan Lens,91|88,SCAN
+314,Scanner Pupil Relay,313|144|155,SCAN
+315,Galvanometric Scanner,312,SCAN
+316,Resonant Scanner,315,SCAN
+317,Polygon Scanner,312,SCAN
+318,Acousto-Optic Deflector,312|113,SCAN
+319,Raster Scan Pattern,315,SCAN
+320,Pixel Dwell Time,319|294,SCAN
+321,Scan Linearity Correction,316|319,SCAN
+322,Random-Access Scanning,318,SCAN
+323,Descanned Detection,312|170,SCAN
+324,Confocal Pinhole,323|89|112,SCAN
+325,Airy Unit,324,SCAN
+326,Optical Sectioning,324|206,SCAN
+327,Confocal Microscopy,326|312,SCAN
+328,Confocal Resolution,327|128|325,SCAN
+329,Spinning Disk Confocal,327|233,SCAN
+330,Line-Scanning Confocal,327,SCAN
+331,Image Scanning Microscopy,328|251,SCAN
+332,Excitation Power Control,312|269,SCAN
+333,Ultrafast Pulsed Laser,72,SCAN
+334,Ti:Sapphire Laser,333,SCAN
+335,Pulse Width and Repetition Rate,333,SCAN
+336,Group Delay Dispersion,61|335,SCAN
+337,Pulse Compression,336,SCAN
+338,Nonlinear Optical Response,45|34,SCAN
+339,Two-Photon Absorption,338|188,SCAN
+340,Two-Photon Excitation Microscopy,339|312|333,SCAN
+341,Intrinsic Optical Sectioning,340|326,SCAN
+342,Non-Descanned Detection,340|323,SCAN
+343,Three-Photon Microscopy,340,SCAN
+344,Second Harmonic Generation,338|333,SCAN
+345,Third Harmonic Generation,344,SCAN
+346,Coherent Raman Imaging,338|333,SCAN
+347,Imaging Depth Limit,67|340,SCAN
+348,Fluorescence Lifetime Imaging,250|312,SCAN
+349,Temporal Focusing,336|113|340,SCAN
+350,Electrically Tunable Lens,76|293,SCAN
+351,Remote Focusing,143|95|293,SCAN
+352,Wavefront Aberration,43|94|114,AO
+353,Zernike Polynomials,352,AO
+354,RMS Wavefront Error,353,AO
+355,Strehl Ratio,118|354,AO
+356,Marechal Criterion,355,AO
+357,Sample-Induced Aberrations,352|39,AO
+358,Refractive Index Mismatch,357|148,AO
+359,Scattering in Tissue,67|357,AO
+360,Isoplanatic Patch,357,AO
+361,Adaptive Optics,352|90,AO
+362,Wavefront Corrector,361,AO
+363,Deformable Mirror,362,AO
+364,Actuator Count and Stroke,363|353,AO
+365,Spatial Light Modulator,362|271,AO
+366,Phase Wrapping in SLMs,365,AO
+367,Pupil Conjugation,361|89,AO
+368,Wavefront Sensing,361,AO
+369,Shack-Hartmann Sensor,368|353,AO
+370,Guide Star,369|188,AO
+371,Closed-Loop AO Control,368|362,AO
+372,Sensorless Adaptive Optics,361|31,AO
+373,Image Quality Metric,372|256,AO
+374,Modal Wavefront Correction,353|372,AO
+375,Pupil Segmentation,372|367,AO
+376,Wavefront Shaping,365|359,AO
+377,Transmission Matrix,376|21,AO
+378,Holographic Illumination,365|110,AO
+379,Phase Retrieval,114|31,AO
+380,Forward Imaging Model,133|214|216,REST
+381,Image Noise Model,220|380,REST
+382,Inverse Problem,380,REST
+383,Ill-Posed Problem,382|123,REST
+384,Deconvolution,382|14,REST
+385,Inverse Filtering,384,REST
+386,Noise Amplification,385|381,REST
+387,Wiener Filter,385|24,REST
+388,Regularization,383,REST
+389,Tikhonov Regularization,388|22,REST
+390,Total Variation Regularization,388,REST
+391,Richardson-Lucy Algorithm,384|25|28,REST
+392,Iteration Count and Convergence,391,REST
+393,Deconvolution Artifacts,391|387|386,REST
+394,FFT Boundary Handling,384|17,REST
+395,Theoretical vs Measured PSF,134|384,REST
+396,Blind Deconvolution,384|31,REST
+397,Bayesian Image Restoration,29|388,REST
+398,Multiview Deconvolution,384|130,REST
+399,Background Estimation,381,REST
+400,Image Denoising,381,REST
+401,Gaussian and Median Filtering,400|9,REST
+402,Non-Local Means Denoising,400,REST
+403,Variance-Stabilizing Transform,25|400,REST
+404,Computational Aberration Fix,384|379,REST
+405,Fourier Ring Correlation,13|128,REST
+406,Restoration Fidelity Metrics,215|384,REST
+407,Image Preprocessing,255|399,QUANT
+408,Intensity Histogram,298,QUANT
+409,Contrast Adjustment and LUTs,408,QUANT
+410,Image Registration,407|31,QUANT
+411,Drift Correction,410|183,QUANT
+412,Chromatic Registration,410|96,QUANT
+413,Edge Detection,9|407,QUANT
+414,Thresholding,408|407,QUANT
+415,Otsu's Method,414,QUANT
+416,Image Segmentation,414,QUANT
+417,Morphological Operations,416,QUANT
+418,Connected Component Labeling,416,QUANT
+419,Watershed Segmentation,416|417,QUANT
+420,Feature Extraction,418,QUANT
+421,Object Morphometry,420,QUANT
+422,Intensity Quantification,420|254,QUANT
+423,Spot Detection,407|118,QUANT
+424,Sub-Pixel Localization,423|19|28,QUANT
+425,Localization Precision,424|214,QUANT
+426,Cramer-Rao Lower Bound,425,QUANT
+427,Particle Tracking,424,QUANT
+428,Trajectory Linking,427,QUANT
+429,Trajectory Analysis,428,QUANT
+430,Mean Squared Displacement,429,QUANT
+431,Diffusion Coefficient,430,QUANT
+432,Colocalization Analysis,422|204|412,QUANT
+433,Pearson Correlation Coefficient,432,QUANT
+434,Spatial Point Pattern Analysis,423|23,QUANT
+435,Ripley's K Function,434,QUANT
+436,Nearest-Neighbor Distance,434,QUANT
+437,Density-Based Clustering,434,QUANT
+438,Statistics of Image Data,30|420,QUANT
+439,Image Analysis Software,33|298,QUANT
+440,Image Analysis Pipeline,439|420|407,QUANT
+441,Reproducible Analysis,440|306,QUANT
+442,Large Dataset Processing,440|307,QUANT
+443,Machine Learning,31|23,ML
+444,Supervised Learning,443,ML
+445,Training and Test Data,444,ML
+446,Ground Truth Data,445,ML
+447,Data Augmentation,445,ML
+448,Loss Function,444|31,ML
+449,Overfitting and Generalization,445|448,ML
+450,Artificial Neural Network,443|32,ML
+451,Convolutional Neural Network,450|9,ML
+452,U-Net Architecture,451,ML
+453,GPU Acceleration,450|17,ML
+454,Image Classification,451|444,ML
+455,Deep Learning Denoising,451|400,ML
+456,Self-Supervised Denoising,455,ML
+457,Content-Aware Restoration,455|446|452,ML
+458,Learned Resolution Enhancement,457|128,ML
+459,Deep Learning Segmentation,452|416,ML
+460,Instance Segmentation,459|418,ML
+461,Generalist Segmentation Models,460|447,ML
+462,Segmentation Accuracy Metrics,459|446,ML
+463,Virtual Staining,457|284,ML
+464,Hallucination Artifacts,457|449,ML
+465,Domain Shift,449,ML
+466,Model Validation,464|465|462,ML
+467,Uncertainty Estimation,466|29,ML
+468,Verifying AI-Generated Content,466,ML
+469,Smart Microscopy,310|443,ML
+470,Real-Time Image Analysis,469|440|453,ML
+471,Event-Driven Acquisition,470|308,ML
+472,Adaptive Illumination Control,471|196,ML
+473,Feedback Control in Microscopy,469|371,ML
+474,Autofocus Algorithms,183|373,ML
+475,Imaging Performance Trade-Offs,209|128|294|156|196,ADV
+476,Light-Sheet Microscopy,71|326|233,ADV
+477,Light-Sheet Thickness Trade-Off,476,ADV
+478,Lattice Light-Sheet,477|136,ADV
+479,Oblique Plane Microscopy,476|351,ADV
+480,Super-Resolution Microscopy,124|194,ADV
+481,Moire Fringes,13|51|287,ADV
+482,Structured Illumination (SIM),480|120|481,ADV
+483,STED Microscopy,480|197|135,ADV
+484,STED Depletion Donut,483|365,ADV
+485,Single-Molecule Localization,480|425|199,ADV
+486,PALM and STORM,485,ADV
+487,3D Astigmatic Localization,485|98|135,ADV
+488,MINFLUX,485|484,ADV
+489,Labeling Density Limit,485|285,ADV
+490,Expansion Microscopy,480,ADV
+491,Light Field Microscopy,301|228|398,ADV
+492,Fourier Ptychography,379|263|301,ADV
+493,Optical Diffraction Tomography,278|109|132,ADV
+494,Optical Clearing,359|358,ADV
+495,Deep Tissue In Vivo Imaging,347|361|343,ADV
+496,de Broglie Wavelength,37|69,ADV
+497,Electron Microscopy Basics,496|124,ADV
+498,TEM and SEM,497,ADV
+499,EM Resolution Limits,497|94,ADV
+500,EM Sample Requirements,498,ADV
+501,Light vs Electron Microscopy,499|500|128|283,ADV
+502,Correlative Light and EM (CLEM),501|410,ADV
+503,CLEM Fiducial Markers,502,ADV
+504,Choosing an Imaging Technique,475|252|501,ADV
+505,Microscope System Design,504|165|170|289,ADV
+506,Critical Reading of Papers,504,ADV
+507,Interpreting Figures,506|256,ADV
+508,Technical Report Writing,506,ADV
+509,Citation Verification,508|468,ADV
+510,Scientific Presentation,507|508,ADV

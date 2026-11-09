@@ -1,0 +1,17 @@
+{
+  "MATH": "SteelBlue",
+  "WAVE": "DarkSlateBlue",
+  "GEOM": "DarkGreen",
+  "DIFF": "LimeGreen",
+  "INST": "Gold",
+  "FLUO": "DarkGoldenrod",
+  "DET": "Teal",
+  "CONT": "LightSkyBlue",
+  "SAMP": "Khaki",
+  "SCAN": "Crimson",
+  "AO": "MediumPurple",
+  "REST": "Indigo",
+  "QUANT": "DarkOrchid",
+  "ML": "Orange",
+  "ADV": "DeepPink"
+}
